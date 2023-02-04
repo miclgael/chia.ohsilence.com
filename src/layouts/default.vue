@@ -8,7 +8,7 @@ const headerFooterTheme = {
 
 <template>
   <c-section element="header" :theme="headerFooterTheme">
-    <h1>Oh Silence Records</h1>
+    <app-logo />
   </c-section>
   <c-section element="main" :is-container="false">
     <slot />

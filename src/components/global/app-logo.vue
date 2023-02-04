@@ -14,7 +14,6 @@
 </template>
 
 <style scoped>
-h1, h2 { font-family: "Dela Gothic One", sans-serif; }
 hgroup { all: unset; }
 @media screen and (max-width: 768px) {
   .branding {
