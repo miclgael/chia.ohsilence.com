@@ -1,3 +1,27 @@
+<script setup>
+const props = defineProps({
+  product: {
+    required: true,
+    type: Object,
+    validator (obj) {
+      // All object keys must be present
+      const keys = ['title', 'id', 'images', 'variants', 'description']
+
+      // Check object keys are not undefined
+      return keys.map(key => key in obj)
+    }
+  }
+})
+
+// Ensure default image is used for thumbnail
+const defaultImage = (images) => {
+  return images.find((image) => image.is_default === true)
+}
+
+// Currency formatter
+const $ = (cents) => (cents / 100).toLocaleString("en-AU", { style: 'currency', currency: 'AUD' })
+</script>
+
 <template>
   <article class="product-card">
     <header>
@@ -32,29 +56,6 @@
   </article>
 </template>
 
-<script setup>
-const props = defineProps({
-  product: {
-    required: true,
-    type: Object,
-    validator (obj) {
-      // All object keys must be present
-      const keys = ['title', 'id', 'images', 'variants', 'description']
-
-      // Check object keys are not undefined
-      return keys.map(key => key in obj)
-    }
-  }
-})
-
-// Ensure default image is used for thumbnail
-const defaultImage = (images) => {
-  return images.find((image) => image.is_default === true)
-}
-
-// Currency formatter
-const $ = (cents) => (cents / 100).toLocaleString("en-AU", { style: 'currency', currency: 'AUD' })
-</script>
 
 <style scoped>
 .product-image {

@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  return await fetch(config.PRINTIFY_BASE_URL + `shops/${config.PRINTIFY_SHOP_ID}/product/${productId}.json`, options)
+  return await fetch(config.PRINTIFY_BASE_URL + `shops/${config.PRINTIFY_SHOP_ID}/products/${productId}.json`, options)
     .then(res => res.json())
     .then(data => { 
       logger.info(`Fetched single product \`${productId}\` via \`printify/product/[id].json\``)
