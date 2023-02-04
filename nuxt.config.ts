@@ -1,5 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+   app: {
+    pageTransition: { 
+      name: 'slide-fade',
+      mode: 'out-in'
+    },
+    head: {
+      bodyAttrs: {
+        'data-theme': 'light'
+      }
+    }
+  },
+  
   // Move @ directory to src/
   // https://nuxt.com/docs/api/configuration/nuxt-config#srcdir
   srcDir: 'src/',

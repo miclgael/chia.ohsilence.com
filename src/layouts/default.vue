@@ -13,6 +13,10 @@ const headerFooterTheme = {
   <c-section element="main" :is-container="false">
     <slot />
   </c-section>
+  <c-section>
+    <h2>Follow Us</h2>
+    <molecules-c-social-links />
+  </c-section>
   <c-section element="footer" :theme="headerFooterTheme">
     <p>Michael Gale &copy; 1987 - {{ year }}</p>
   </c-section>

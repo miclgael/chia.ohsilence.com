@@ -5,15 +5,15 @@
     </header>
 
     <div class="product-image">
-      <img
+      <nuxt-img
         class="product-image__default" 
         :src="defaultImage(product.images).src" 
-        alt="" 
+        alt="Black / white t-shirt with a large logo on the front" 
         loading="lazy" 
         aria-labelledby="product-image-description"
         width="1200"
         height="1200"
-      >
+      />
       <span class="product-image__position">
         Displaying product from the {{ defaultImage(product.images).position }}
       </span>
@@ -21,7 +21,7 @@
 
     <details>
       <summary>Product Details</summary>
-      <div v-html="product.description" id="product-image-description"></div>
+      <div v-html="product.description"></div>
     </details>
 
     <footer>
