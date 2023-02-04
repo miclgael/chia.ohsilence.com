@@ -79,6 +79,8 @@ const $ = (cents) => (cents / 100).toLocaleString("en-AU", { style: 'currency', 
 
   display: grid;
   grid-template-rows: 1fr auto auto auto;
+
+  background-color: var(--color-white, #fff);
 }
 
 article>header h3,
