@@ -14,7 +14,6 @@ const headerFooterTheme = {
     <slot />
   </c-section>
   <c-section>
-    <h2>Follow Us</h2>
     <molecules-c-social-links />
   </c-section>
   <c-section element="footer" :theme="headerFooterTheme">

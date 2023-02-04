@@ -1,0 +1,9 @@
+
+/* TEAM */
+Name: Michael Gale
+Role: Developer
+Site: https://www.michaelgale.dev
+Github: @miclgael
+
+/* SITE */
+Framework: Nuxt 3

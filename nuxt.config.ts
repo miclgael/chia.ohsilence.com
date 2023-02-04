@@ -8,7 +8,44 @@ export default defineNuxtConfig({
     head: {
       bodyAttrs: {
         'data-theme': 'light'
-      }
+      },
+      link: [
+        { 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap',
+          hid: 'google-font-dela-gothic-one'
+        },
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/favicons/apple-touch-icon.png'
+        },
+        {
+          rel: 'icon',
+          href: '/favicons/favicon.ico'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/favicons/favicon-32x32.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/favicons/favicon-16x16.png'
+        },
+        {
+          rel: 'manifest',
+          href: '/favicons/manifest.json'
+        },
+        {
+          type: 'text/plain',
+          rel: 'author',
+          href: 'https://www.ohsilence.com/humans.txt'
+        }
+      ],
     }
   },
   
@@ -28,7 +65,7 @@ export default defineNuxtConfig({
 
   // Configure PicoCSS
   // https://nuxt.com/docs/api/configuration/nuxt-config#css 
-  css: ['@picocss/pico', '@/assets/css/pico.css'],
+  css: ['@picocss/pico', '@/assets/css/pico.css', '@/assets/css/global.css'],
   
   runtimeConfig: {
     PRINTIFY_API_KEY: process.env.PRINTIFY_API_KEY,
