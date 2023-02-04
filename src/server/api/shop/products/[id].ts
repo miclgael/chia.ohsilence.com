@@ -31,6 +31,6 @@ export default defineEventHandler(async (event) => {
     })
     .catch(err => {
       logger.error(err)
-      return JSON.parse(err)
+      return { error: 'an error occurred' }
     })
 })
