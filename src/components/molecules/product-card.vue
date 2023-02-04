@@ -25,9 +25,9 @@
     </details>
 
     <footer>
-      <c-button>
+      <atoms-c-button>
         Buy Now for {{ $(product.variants.at(0).price) }}
-      </c-button>
+      </atoms-c-button>
     </footer>
   </article>
 </template>
