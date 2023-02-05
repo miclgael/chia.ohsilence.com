@@ -1,9 +1,10 @@
-<script setup>
-const { data:products } = await useFetch('/api/shop/products-mock')
+<script setup lang="ts">
+const { data } = await useFetch('/api/shop/products')
+const products = data.value as Product[]
 </script>
 
 <template>
   <c-section>
-    <organisms-product-card-list :data="products" />
+    <organisms-product-card-list :products="products" />
   </c-section>
 </template>

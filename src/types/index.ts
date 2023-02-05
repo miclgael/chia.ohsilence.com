@@ -42,7 +42,7 @@ declare global {
   }
   
   interface Product {
-    id: number;
+    id: string;
     title: string;
     description: string;
     tags: string[];

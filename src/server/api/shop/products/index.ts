@@ -30,8 +30,5 @@ export default defineEventHandler(async () => {
       return { error: 'an error occurred' }
     })
 
-  return {
-    productsCount: products.length,
-    products
-  }
+  return products as Product[]
 })
