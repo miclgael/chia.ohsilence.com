@@ -70,7 +70,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     PRINTIFY_API_KEY: process.env.PRINTIFY_API_KEY,
     PRINTIFY_BASE_URL: process.env.PRINTIFY_BASE_URL,
-    PRINTIFY_SHOP_ID: process.env.PRINTIFY_SHOP_ID
+    PRINTIFY_SHOP_ID: process.env.PRINTIFY_SHOP_ID,
+    CF_API_TOKEN: process.env.CF_API_TOKEN,
+    CF_ACCOUNT_ID: process.env.CF_ACCOUNT_ID
   },
   
   // Nuxt extensions to load
@@ -83,8 +85,5 @@ export default defineNuxtConfig({
 
   // Config for official image module
   // https://v1.image.nuxtjs.org/configuration
-  image: {
-    domains: ['ohsilence.com']
-  },
-
+  image: {},
 })
