@@ -1,3 +1,4 @@
+# Nuxt defaults
 node_modules
 *.log*
 .nuxt
@@ -7,7 +8,14 @@ node_modules
 .env
 dist
 
+# OS Files
+.DS_Store
+
+# Hide mock data by default
 mockData.json
 
-# assets stored in cloud storage
+# Cleaned up mock data
+!src/server/api/mockData.json
+
+# Remove local assets stored in cloud storage
 images-offline

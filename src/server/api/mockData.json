@@ -1,0 +1,131 @@
+[
+  {
+    "id": "1",
+    "title": "I Am The Agent 'Birdie' Tee",
+    "description": "<p>This comfy and casual t-shirt makes the ultimate go-to t-shirt. It comes in a regular fit with a fitted crew neck, it&rsquo;s made of mid-weight 100% combed cotton. Built to last with a ribbed neckline, side seams, shoulder to shoulder tape, and double-needle hems. It is also preshrunk to minimize shrinkage.<br />*AS Colour is an Ethical Fashion brand.</p>\n<p>.: 100% combed, ring-spun cotton (fiber content may vary for different colors)<br />.: Medium fabric (5.2 oz /yd&sup2; (176 g/m&sup2;))<br />.: Regular fit<br />.: Sewn in label<br />.: Runs true to size</p>\n<p>&nbsp;</p>\n<table id=\"size-guide\" style=\"min-width: 360px;\">\n<thead>\n<tr>\n<th style=\"padding: 10px;\">&nbsp;</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">S</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">M</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">L</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">XL</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">2XL</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">3XL</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">4XL</th>\n<th style=\"color: #000000; font-weight: 500; text-align: left; font-size: 15px; padding: 10px;\">5XL</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">Width, cm</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">47.00</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">52.10</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">56.50</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">61.00</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">64.50</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">67.90</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">75.00</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">80.00</td>\n</tr>\n<tr>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">Length, cm</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">71.10</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">74.90</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">78.70</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">79.40</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">83.80</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">84.40</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">87.00</td>\n<td style=\"padding: 10px; color: #525252; font-size: 15px; border-top: 1px solid #ededed; word-break: break-word;\">89.00</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+    "tags": [
+      "Men's Clothing",
+      "T-shirts",
+      "DTG",
+      "Regular fit",
+      "Crew neck",
+      "Cotton"
+    ],
+    "options": [
+      {
+        "name": "Colors",
+        "type": "color",
+        "values": [
+          {
+            "id": 1,
+            "title": "White",
+            "colors": [
+              "#F9F9F9"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Red",
+            "colors": [
+              "#e80000"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sizes",
+        "type": "size",
+        "values": [
+          {
+            "id": 1,
+            "title": "S"
+          },
+          {
+            "id": 2,
+            "title": "M"
+          },
+          {
+            "id": 3,
+            "title": "L"
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 1,
+        "sku": "1",
+        "cost": 1537,
+        "price": 2562,
+        "title": "Army / S",
+        "grams": 142,
+        "is_enabled": false,
+        "is_default": false,
+        "is_available": true,
+        "options": [
+          2264,
+          14
+        ],
+        "quantity": 1
+      }
+    ],
+    "images": [
+      {
+        "src": "https://images-api.printify.com/mockup/63bc9f465b4a6ced7202b2b2/62828/40907/i-am-the-agent-birdie-tee.jpg",
+        "variant_ids": [
+          62828,
+          62754,
+          62791,
+          62865,
+          62902,
+          62939,
+          64970,
+          65006
+        ],
+        "position": "front",
+        "is_default": true,
+        "is_selected_for_publishing": true
+      }
+    ],
+    "created_at": "2023-01-09 23:12:06+00:00",
+    "updated_at": "2023-01-09 23:13:18+00:00",
+    "visible": true,
+    "is_locked": true,
+    "blueprint_id": 1,
+    "user_id": 1,
+    "shop_id": 1,
+    "print_provider_id": 34,
+    "print_areas": [
+      {
+        "variant_ids": [
+          1
+        ],
+        "placeholders": [
+          {
+            "position": "back",
+            "images": []
+          },
+          {
+            "position": "front",
+            "images": [
+              {
+                "id": "1",
+                "name": "birdie-wot@16x.png",
+                "type": "image/png",
+                "height": 3104,
+                "width": 4400,
+                "x": 0.5,
+                "y": 0.27407714144225587,
+                "scale": 0.8008966511754583,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "print_details": [],
+    "sales_channel_properties": [],
+    "twodaydelivery_enabled": false
+  }
+]
