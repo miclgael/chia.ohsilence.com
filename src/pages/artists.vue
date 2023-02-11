@@ -5,5 +5,7 @@ useHead({
 </script>
 
 <template>
-  <molecules-list-artists />
+  <c-section>
+    <molecules-list-artists />
+  </c-section>
 </template>
