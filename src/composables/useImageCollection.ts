@@ -8,7 +8,7 @@
 export async function useImageCollection (filenames:string[]) {
   const images = await Promise.allSettled(filenames.map(async (filename) => {
     const image = await $fetch(`/api/images/${filename}`)
-    
+    // console.log('collection/fetching image: ', filename)
     // return src and filename, since result could be in any order
     return { filename, src: image.variants[0] }
   })) as { status: 'fulfilled' | 'rejected', value: any, reason: string}[]; 

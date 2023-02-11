@@ -62,4 +62,47 @@ declare global {
     sales_channel_properties: any[];
     twodaydelivery_enabled: boolean;
   }
+
+  // Releases must be one of these release types
+  export type ReleaseType = "LP" | "EP" | "SINGLE" | "B-SIDE" | "REMIX" | "REMASTER";
+  export interface ReleaseLink {
+    url: string;
+    text: string;
+  }
+  export interface ReleaseTrack {
+    title: string;
+    length: string;
+  }
+
+  // Releases must follow this template
+  export interface Release {
+    id: string;
+    title: string;
+    type: ReleaseType;
+    artwork: string;
+    artworkCredit?: string;
+    links: ReleaseLink[];
+    date: Date;
+    artistName?: string;
+    artistSlug?: string;
+    tracks?: ReleaseTrack[];
+    notes?: string;
+  }
+
+  // Artists must follow this template
+  export interface Artist {
+    slug: string;
+    name: string;
+    bio: string;
+    image: OhSilenceImage;
+    releases: Release[];
+  }
+
+  export interface OhSilenceImage {
+    src: string;
+    alt: string;
+    caption?: string;
+    width?: number;
+    height?: number;
+  }
 }

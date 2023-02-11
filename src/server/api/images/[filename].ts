@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
   try {
     // Filter images by filename only return one image object
     const filteredImages = images.filter((image:any) => image.filename.includes(filename))
-    logger.info('Fetched image by its file name `/api/images/[filename]`')
+    logger.info(`Fetched image by its file name \`/api/images/[${filename}]\``)
     
     // Return filtered images
     return filteredImages[0]
