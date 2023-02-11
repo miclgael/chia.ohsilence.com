@@ -10,15 +10,15 @@ const { current, alumni } = await useArtists()
         <nuxt-link :to="`/artist/${artist.slug}`">{{ artist.name }}</nuxt-link>
       </li>
     </ul>
-    <h3 v-if="$route.name === 'artists'">
+    <h3>
       Alumni
     </h3>
-    <ul v-if="$route.name === 'artists'">
+    <ul>
       <li v-for="artist in alumni" :key="artist.slug">
         <nuxt-link :to="`/artist/${artist.slug}`">{{ artist.name }}</nuxt-link>
       </li>
     </ul>
-    <div v-if="$route.name !== 'artists'">
+    <div>
       <nuxt-link to="/artists">View all artists &rarr;</nuxt-link>
     </div>
   </div>

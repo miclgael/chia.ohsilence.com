@@ -19,7 +19,10 @@ useHead({
 
 <template>
   <c-section element="header" :theme="headerFooterTheme">
-    <app-logo />
+    <div class="app-header">
+      <app-logo />
+      <app-menu-button />
+    </div>
   </c-section>
   <c-section element="main" :is-container="false">
     <slot />
@@ -30,10 +33,15 @@ useHead({
   <c-section element="footer" :theme="headerFooterTheme">
     <p>Michael Gale &copy; 1987 - {{ year }}</p>
   </c-section>
+  <div id="menu-target"></div>
 </template>
 
-<style>
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+<style scoped>
+.app-header {
+  margin-top: calc(var(--typography-spacing-vertical) * 2);
+  margin-bottom: calc(var(--typography-spacing-vertical) * 2);
+
+  display: grid;
+  grid-template-columns: 1fr 100px;
 }
 </style>
