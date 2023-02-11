@@ -1,12 +1,6 @@
 <script setup>
 import { useStorage, usePreferredDark } from '@vueuse/core'
 
-const year = (new Date).getFullYear()
-const headerFooterTheme = {
-  background: '#000',
-  color: '#fff',
-}
-
 // Set up dynamic page titles
 useHead({
   titleTemplate: (title) => {
@@ -16,9 +10,6 @@ useHead({
       : `${template}`
   }
 })
-
-// Theming
-const { menuActive, container, containerWide } = useSimpleState()
 
 // Get User's preference from browser/OS
 const prefersDark = usePreferredDark()
@@ -49,34 +40,37 @@ watch(() => isDarkMode.value, () => {
   toggleTheme()
 });
 
+// Copyright year
+const year = (new Date).getFullYear()
 </script>
 
 <template>
-  <c-section element="header" :theme="headerFooterTheme">
-    <div class="app-header">
-      <app-logo />
-      <app-menu-button />
-    </div>
-  </c-section>
-  <c-section element="main" :is-container="false">
-    <slot />
-  </c-section>
-  <c-section>
-    <molecules-c-social-links />
-  </c-section>
-  <c-section element="footer" :theme="headerFooterTheme">
-    <p>Michael Gale &copy; 1987 - {{ year }}</p>
-    <span class="dark-mode-switch">
-      <label for="switch">
-        <input type="checkbox" id="switch" name="switch" role="switch" v-model="isDarkMode">
-        <span class="sr-only">Toggle Dark Mode</span>
-        <span class="switch-emoji">
-          <span>☾</span>
-        </span>
-      </label>
-    </span>
-  </c-section>
-  <div id="menu-target"></div>
+  <div>
+    <c-section element="header">
+      <div class="app-header">
+        <app-logo />
+        <app-menu-button />
+      </div>
+    </c-section>
+    <c-section element="main" :is-container="false">
+      <slot />
+    </c-section>
+    <c-section>
+      <molecules-c-social-links />
+    </c-section>
+    <c-section element="footer">
+      <p>Michael Gale &copy; 1987 - {{ year }}</p>
+      <span class="dark-mode-switch">
+        <label for="switch">
+          <input type="checkbox" id="switch" name="switch" role="switch" v-model="isDarkMode">
+          <span class="sr-only">Toggle Dark Mode</span>
+          <span class="switch-emoji">
+            <span>☾</span>
+          </span>
+        </label>
+      </span>
+    </c-section>
+  </div>
 </template>
 
 <style scoped>
