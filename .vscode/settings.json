@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    ".nuxt": true,
+    ".npmrc": true,
+    ".nvmrc": true,
+    ".gitattributes": true
+  },
+  "workspace.isHidden": true
+}

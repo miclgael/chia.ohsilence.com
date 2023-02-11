@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@miclgael/use-helpers": "^0.0.13",
     "@nuxt/content": "^2.4.3",
     "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "@picocss/pico": "^1.5.7",
