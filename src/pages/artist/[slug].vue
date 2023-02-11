@@ -7,8 +7,8 @@ const route = useRoute()
 const slug = route.params.slug
 
 // Pluck the artist info
-const { getArtistBySlug } = await useArtists()
-const artist:Artist = getArtistBySlug(slug as string)
+const { getArtistBySlug } = useArtists()
+const artist: Artist = getArtistBySlug(slug as string)
 
 // Pluck helper functions
 const { commaSeparator, prettyDate } = useHelpers()
@@ -109,6 +109,7 @@ useHead({
 .blurb {
   max-width: 768px;
 }
+
 .release-links a {
   display: inline-block;
 }
@@ -118,12 +119,13 @@ useHead({
     grid-template-columns: fit-content(370px) 7fr;
   }
 }
+
 .card {
   padding: unset;
 }
+
 .card-info {
-  padding: calc(var(--block-spacing-vertical) * 0.5)
-    var(--block-spacing-horizontal);
+  padding: calc(var(--block-spacing-vertical) * 0.5) var(--block-spacing-horizontal);
 }
 
 ul {

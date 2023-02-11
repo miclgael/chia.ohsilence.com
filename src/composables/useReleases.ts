@@ -1,5 +1,3 @@
-import { useArtists } from "./useArtists";
-
 export function useReleases() {
  /**
   * Loop through artist and gather their releases
