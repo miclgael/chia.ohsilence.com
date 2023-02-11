@@ -6,7 +6,7 @@ const logger = useLogger()
 
 export default defineEventHandler(async (event) => { 
   const filename = event.context.params.filename
-  const images:any = await $fetch('/api/images/list')
+  const images:Promise<any>|any = await $fetch('/api/images/list')
 
   try {
     // Filter images by filename only return one image object

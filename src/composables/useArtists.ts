@@ -1,4 +1,4 @@
-export async function useArtists() {
+export function useArtists() {
   const current: Artist[] = [
     {
       slug: 'iamtheagent',
