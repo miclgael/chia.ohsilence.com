@@ -2,6 +2,10 @@
 const route = useRoute()
 const { data } = await useFetch('/api/shop/products/' + route.params.id)
 const product = data.value as Product
+
+useHead({
+  title: product.title
+})
 </script>
 
 <template>

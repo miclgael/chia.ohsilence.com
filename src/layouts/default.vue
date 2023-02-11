@@ -4,6 +4,17 @@ const headerFooterTheme = {
   background: '#000',
   color: '#fff',
 }
+
+// Set up dynamic page titles
+useHead({
+  titleTemplate: (title) => {
+    const template = `Oh Silence | The tiny, independent record label`
+    return title
+      ? `${title} | ${template}`
+      : `${template}`
+  }
+})
+
 </script>
 
 <template>
