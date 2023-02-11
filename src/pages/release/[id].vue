@@ -26,6 +26,8 @@ useHead({
       <atoms-c-img
         :src="release.artwork"
         :alt="`the album artwork of ${release.title} by ${release.artistName}`"
+        :width="700"
+        :height="700"
       />
       <figcaption v-if="release.artworkCredit">
         <em>Artwork credit: {{ release.artworkCredit }}</em>
