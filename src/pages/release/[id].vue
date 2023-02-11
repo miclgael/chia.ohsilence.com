@@ -12,7 +12,7 @@ useHead({
   title: `${release.title} ${release.type} by ${release.artistName}`,
   meta: [
     {
-      name: `description`,
+      name: 'description',
       content: `Listen to ${release.title} by ${release.artistName} on Oh Silence`
     }
   ]
