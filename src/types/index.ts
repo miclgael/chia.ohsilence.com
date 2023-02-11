@@ -79,7 +79,7 @@ declare global {
     id: string;
     title: string;
     type: ReleaseType;
-    artwork: string;
+    artwork: string | null;
     artworkCredit?: string;
     links: ReleaseLink[];
     date: Date;

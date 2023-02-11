@@ -52,9 +52,10 @@ useHead({
               :key="release.title.toLowerCase()"
             >
               <article class="grid card">
-                <atoms-c-img
+                <atoms-c-img 
+                  v-if="release.artwork"
                   class="card-thumbnail"
-                  :src="release.artwork"
+                  :src="`${release.artwork}`"
                   :alt="`Cover art from ${release.title} by ${release.artistName}`"
                 />
 

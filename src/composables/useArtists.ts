@@ -299,7 +299,7 @@ export function useArtists() {
         {
           title: 'Takes Me So Long',
           type: 'SINGLE',
-          artwork: "",
+          artwork: null,
           artworkCredit: "",
           links: [
             {
@@ -313,7 +313,7 @@ export function useArtists() {
         {
           title: "Touch U",
           type: "SINGLE",
-          artwork: "",
+          artwork: null,
           artworkCredit: "",
           links: [
             {

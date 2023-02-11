@@ -33,7 +33,7 @@ const error = image.error
   </div>
 </template>
 
-<style scoped module>
+<style scoped>
 .chia-image {
   display: block;
   width: 100%;
@@ -43,6 +43,7 @@ const error = image.error
   object-fit: cover;
   object-position: center;
 }
+
 .chia-image--error {
   aspect-ratio: 1 / 1;
   display: flex;
