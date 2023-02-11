@@ -29,7 +29,7 @@ useHead({
           :key="`release--${count}`"
           role="listitem"
         >
-          <nuxt-link :to="`/release/${release.id}`"
+          <nuxt-link :to="`/releases/${release.id}`"
             >{{ release.title }} by {{ release.artistName }}</nuxt-link
           >
         </li>
@@ -44,7 +44,7 @@ useHead({
           v-for="(release, count) in sortedReleases"
           :key="`release--${count}`"
         >
-          <nuxt-link :to="`/release/${release.id}`"
+          <nuxt-link :to="`/releases/${release.id}`"
             >{{ release.title }} by {{ release.artistName }}</nuxt-link
           >
         </li>

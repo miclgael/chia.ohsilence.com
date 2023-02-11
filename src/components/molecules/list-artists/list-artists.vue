@@ -16,7 +16,7 @@ defineProps<Props>()
       <h3>Current Artists</h3>
       <ul>
         <li v-for="artist in current" :key="artist.slug">
-          <nuxt-link :to="`/artist/${artist.slug}`">{{ artist.name }}</nuxt-link>
+          <nuxt-link :to="`/artists/${artist.slug}`">{{ artist.name }}</nuxt-link>
         </li>
       </ul>
     </div>
@@ -26,7 +26,7 @@ defineProps<Props>()
       </h3>
       <ul>
         <li v-for="artist in alumni" :key="artist.slug">
-          <nuxt-link :to="`/artist/${artist.slug}`">{{ artist.name }}</nuxt-link>
+          <nuxt-link :to="`/artists/${artist.slug}`">{{ artist.name }}</nuxt-link>
         </li>
       </ul>
     </div>

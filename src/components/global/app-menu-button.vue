@@ -58,7 +58,7 @@ const links = reactive([
                 v-for="(link, count) in links"
                 :key="`link--${count}`"
               >
-                <nuxt-link :to="link.to" class="nav__link" @click="menuActive = false">
+                <nuxt-link :to="link.to" :class="'nav__link'" @click="menuActive = false">
                   {{ link.label }}
                 </nuxt-link>
               </li>
@@ -162,7 +162,7 @@ button.active .menu-hamburger--open {
   font-size: 2rem;
 }
 
-.nav__link.router-link-exact-active:before {
+.nav__link.router-link-active:before {
   content: "\2192";
 }
 </style>

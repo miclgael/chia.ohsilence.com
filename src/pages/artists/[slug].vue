@@ -61,7 +61,7 @@ useHead({
 
                 <div class="card-info">
                   <h4>
-                    <nuxt-link :to="`/release/${release.id}`">
+                    <nuxt-link :to="`/releases/${release.id}`">
                       <span>{{ release.title }}</span>
                       <small> ({{ release.type }}) </small>
                     </nuxt-link>
@@ -84,7 +84,7 @@ useHead({
 
                   <p>
                     <nuxt-link
-                      :to="`/release/${release.id}`"
+                      :to="`/releases/${release.id}`"
                       role="button"
                       class="primary"
                       >Learn more &rarr;</nuxt-link
@@ -125,8 +125,26 @@ useHead({
   padding: unset;
 }
 
+
+:deep(.card-thumbnail .chia-image) {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 992px) {
+  :deep(.card-thumbnail .chia-image) {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: unset;
+  }
+}
+
 .card-info {
   padding: calc(var(--block-spacing-vertical) * 0.5) var(--block-spacing-horizontal);
+}
+
+.card-info p {
+  margin-bottom: 20px;
 }
 
 ul {
