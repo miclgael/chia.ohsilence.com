@@ -8,14 +8,12 @@
 export async function useImageSingle (filename:string) : Promise<ImageWithVariants> {
   try {
     const image = await $fetch(`/api/images/${filename}`)
-    console.log('single/fetching image: ', filename, image.variants)
 
     return {
       public: image.variants.find((variant:ImageVariant) => variant.includes('public')),
       blur: image.variants.find((variant:ImageVariant) => variant.includes('blur'))
     }
   } catch (e) {
-    console.error(e)
     return { error: `An error ocurred fetching the image from \`/api/images/${filename}\`` }
   }
 }
