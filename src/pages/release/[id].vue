@@ -9,7 +9,7 @@ const { getReleaseById } = useReleases()
 const release = getReleaseById(releaseId as string)
 
 useHead({
-  title: `${release.title} ${release.type} by ${release.artistName}`,
+  title: `${release.title} (${release.type?.toLocaleLowerCase()}) by ${release.artistName}`,
   meta: [
     {
       name: 'description',

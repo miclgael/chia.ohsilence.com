@@ -122,6 +122,50 @@ export function useArtists() {
       },
       releases: [
         {
+          title: 'Every Alterations',
+          type: 'LP',
+          artwork: 'release-whalebones-3.jpg',
+          artworkCredit: 'Michael Gale',
+          notes: 'The debut album from <em>Whalebones</em>, featuring 14 original tracks. Take a dip in the warm waters of introspective and emotive IDM from the Australian musician.<br><br>Words, music and production by Michael Gale.',
+          links: [
+            {
+              url: 'https://whalebones.bandcamp.com/album/every-alterations',
+              text: 'Bandcamp',
+            },
+            {
+
+              url: 'https://open.spotify.com/album/60PRgolOzB6xfanO6RWugr?si=TGbtuxxeSm-4xjwlaNGtMQ',
+              text: 'Spotify',
+            },
+            {
+              url: 'https://music.apple.com/au/artist/whalebones/279869764',
+              text: 'Apple Music',
+            },
+            {
+              url: 'https://soundcloud.com/whalebonesss/sets/every-alterations',
+              text: 'Soundcloud',
+            },
+            {
+              url: 'https://music.youtube.com/playlist?list=OLAK5uy_kiSCsu1sVhbEE-zUOs9hjv_-VyCE06wZ0',
+              text: 'YouTube Music',
+            },
+            {
+              url: 'https://www.deezer.com/album/372405187',
+              text: 'Deezer',
+            },
+            {
+              url: 'https://tidal.com/browse/album/258271612',
+              text: 'Tidal',
+            },
+            {
+              url: 'https://www.amazon.com/dp/B0BLCNTPYC/',
+              text: 'Amazon Music',
+            },
+          ],
+          date: new Date('December 1, 2022'),
+          id: 'OH-013',
+        },
+        {
           title: 'Return Undefined',
           type: 'SINGLE',
           artwork: 'release-whalebones-2.jpg',
