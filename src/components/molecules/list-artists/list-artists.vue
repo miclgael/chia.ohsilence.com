@@ -18,8 +18,5 @@ const { current, alumni } = await useArtists()
         <nuxt-link :to="`/artist/${artist.slug}`">{{ artist.name }}</nuxt-link>
       </li>
     </ul>
-    <div>
-      <nuxt-link to="/artists">View all artists &rarr;</nuxt-link>
-    </div>
   </div>
 </template>
