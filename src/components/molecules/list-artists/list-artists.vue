@@ -11,7 +11,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <div>
+  <c-section :is-container="false">
     <div v-if="!show || show === 'current'">
       <h3>Current Artists</h3>
       <ul>
@@ -30,5 +30,5 @@ defineProps<Props>()
         </li>
       </ul>
     </div>
-  </div>
+  </c-section>
 </template>
