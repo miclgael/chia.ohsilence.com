@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
    app: {
     pageTransition: { 
-      name: 'slide-fade',
+      name: 'view',
       mode: 'out-in'
     },
     head: {
