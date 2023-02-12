@@ -4,6 +4,7 @@ interface Props {
   alt: string
   width?: number
   height?: number
+  errorMessage?: string
 }
 
 // Define typed props
@@ -29,7 +30,7 @@ const error = image.error
     />
   </div>
   <div v-else class="chia-image chia-image--error">
-    <p>Image not found</p>
+    <p>{{ errorMessage }}</p>
   </div>
 </template>
 

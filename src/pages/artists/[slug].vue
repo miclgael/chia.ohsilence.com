@@ -46,7 +46,7 @@ useHead({
       <div v-if="artist.releases.length >= 1">
         <h3>Releases</h3>
         <aside>
-          <ul role="list">
+          <ul role="list" class="release-grid">
             <li role="listitem"
               v-for="release in artist.releases"
               :key="release.title.toLowerCase()"
@@ -125,10 +125,22 @@ useHead({
   padding: unset;
 }
 
+@media screen and (min-width: 1920px) {
+  .card {
+    height: 100%;
+  }
+
+  .release-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--block-spacing-vertical);
+  }
+}
 
 :deep(.card-thumbnail .chia-image) {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+  height: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -140,7 +152,13 @@ useHead({
 }
 
 .card-info {
-  padding: calc(var(--block-spacing-vertical) * 0.5) var(--block-spacing-horizontal);
+  padding: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card-info {
+    padding: calc(var(--block-spacing-vertical) * 0.5) var(--block-spacing-horizontal);
+  }
 }
 
 .card-info p {

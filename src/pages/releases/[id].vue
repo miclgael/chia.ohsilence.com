@@ -28,12 +28,12 @@ useHead({
           :alt="`the album artwork of ${release.title} by ${release.artistName}`"
           :width="700"
           :height="700"
+          :error-message="`The album artwork for ${release.title} by ${release.artistName} could not be loaded.`"
         />
         <figcaption v-if="release.artworkCredit">
           <em>Artwork credit: {{ release.artworkCredit }}</em>
         </figcaption>
       </figure>
-      <div v-else class="artwork-missing">(Artwork Missing)</div>
     
       <div>
         <div class="hgroup">
