@@ -45,7 +45,7 @@ export default defineNuxtConfig({
           rel: 'author',
           href: 'https://www.ohsilence.com/humans.txt'
         }
-      ],
+      ]
     }
   },
   
@@ -85,5 +85,5 @@ export default defineNuxtConfig({
 
   // Config for official image module
   // https://v1.image.nuxtjs.org/configuration
-  image: {},
+  image: {}
 })

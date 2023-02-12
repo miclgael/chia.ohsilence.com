@@ -41,27 +41,35 @@ useHead({
             {{ release.title }} <small>({{ release.id }})</small>
           </h3>
           <h4>
-            <nuxt-link :to="`/artists/${release.artistSlug}`">{{
-              release.artistName
-            }}</nuxt-link>
+            <nuxt-link :to="`/artists/${release.artistSlug}`">
+              {{
+                release.artistName
+              }}
+            </nuxt-link>
           </h4>
         </div>
 
         <p>{{ release.id }}</p>
 
-        <c-section v-if="release.links" :is-container="false">
+        <c-section
+          v-if="release.links"
+          :is-container="false"
+        >
           <h4>Listen on</h4>
           <span
-            class="release-links"
             v-for="(link, count) in release.links"
             :key="`link--${count}`"
+            class="release-links"
           >
             <a :href="link.url"> {{ link.text }} &nearr; </a>
             <span>{{ commaSeparator(release.links, count) }}</span>
           </span>
         </c-section>
 
-        <c-section v-if="release.tracks" :is-container="false">
+        <c-section
+          v-if="release.tracks"
+          :is-container="false"
+        >
           <h4>Tracklist</h4>
           <ol role="list">
             <li
@@ -78,11 +86,14 @@ useHead({
 
         <div v-if="release.notes">
           <h4>Release Notes</h4>
-          <div v-html="release.notes"></div>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <div v-html="release.notes" />
         </div>
       </div>
     </div>
-    <nuxt-link to="/releases">&larr; Return to Releases</nuxt-link>
+    <nuxt-link to="/releases">
+      &larr; Return to Releases
+    </nuxt-link>
   </c-section>
 </template>
 

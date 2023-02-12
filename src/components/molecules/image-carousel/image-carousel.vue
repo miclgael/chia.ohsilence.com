@@ -8,13 +8,35 @@ defineProps<Props>()
 
 <template>
   <div class="product-images">
-    <ul role="list" class="image-list" draggable="true">
-      <li v-for="image in images" :key="image.src" role="listitem" class="image-list__item" >
-        <nuxt-img :src="image.src" alt="Black and white t-shirt with a logo on the front" loading="lazy" width="1200" height="1200" class="image-carousel-grid--image" />
-        <span class="product-image__position" v-if="image?.position !== 'other'">
+    <ul
+      role="list"
+      class="image-list"
+      draggable="true"
+    >
+      <li
+        v-for="image in images"
+        :key="image.src"
+        role="listitem"
+        class="image-list__item"
+      >
+        <nuxt-img
+          :src="image.src"
+          alt="Black and white t-shirt with a logo on the front"
+          loading="lazy"
+          width="1200"
+          height="1200"
+          class="image-carousel-grid--image"
+        />
+        <span
+          v-if="image?.position !== 'other'"
+          class="product-image__position"
+        >
           Displaying product from the {{ image?.position }} position
         </span>
-        <span class="product-image__position" v-else>
+        <span
+          v-else
+          class="product-image__position"
+        >
           Model is wearing product
         </span>
       </li>

@@ -5,7 +5,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .gitignore . --fix"
   },
   "devDependencies": {
     "@miclgael/use-helpers": "^0.0.13",
@@ -13,8 +15,13 @@
     "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "@picocss/pico": "^1.5.7",
     "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "@vueuse/core": "^9.12.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
     "nuxt": "^3.1.2",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "typescript": "^4.9.5"
   }
 }

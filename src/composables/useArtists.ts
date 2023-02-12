@@ -13,7 +13,7 @@ export function useArtists() {
         alt: 'Four dishevelled blokes standing on the side of the highway',
         caption: 'I Am The Agent, roadside 2014',
         width: 1280,
-        height: 630,
+        height: 630
       },
       releases: [
         {
@@ -25,26 +25,26 @@ export function useArtists() {
           links: [
             {
               url: 'https://iamtheagent.bandcamp.com/album/four',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
             {
               url: 'https://open.spotify.com/album/7fcUO1SEYHqRaSW6Xh6G9C?si=iWSGdB5wRtOWEhWrxKrKiQ',
-              text: 'Spotify',
+              text: 'Spotify'
             },
             {
               url: 'https://www.deezer.com/us/album/271715632',
-              text: 'Deezer',
+              text: 'Deezer'
             },
             {
               url: 'https://music.apple.com/au/album/four-2021-remastered-version-ep/1594342044',
-              text: 'iTunes',
+              text: 'iTunes'
             },
             {
               url: 'https://music.youtube.com/playlist?list=OLAK5uy_k-hra-r7O3PBomJpx2V0SI7xIbeALf_v8',
-              text: 'YouTube',
-            },
+              text: 'YouTube'
+            }
           ],
-          date: new Date('December 31, 2015'),
+          date: new Date('December 31, 2015')
         },
         {
           title: 'Volume Three',
@@ -55,10 +55,10 @@ export function useArtists() {
           links: [
             {
               url: 'https://iamtheagent.bandcamp.com/album/volume-three',
-              text: 'Bandcamp',
-            },
+              text: 'Bandcamp'
+            }
           ],
-          date: new Date('January 13, 2012'),
+          date: new Date('January 13, 2012')
         },
         {
           title: 'Volume Two',
@@ -69,10 +69,14 @@ export function useArtists() {
           links: [
             {
               url: 'https://iamtheagent.bandcamp.com/album/volume-two',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
+            {
+              url: 'https://open.spotify.com/album/3jt0OkxFw35gh2rJnSiARL?si=oArrjkMkQ0ebpsz-kYLpZw',
+              text: 'Spotify'
+            }
           ],
-          date: new Date('March 30, 2011'),
+          date: new Date('March 30, 2011')
         },
         {
           title: 'Volume One',
@@ -80,31 +84,31 @@ export function useArtists() {
           id: 'OH-001',
           artwork: 'release-iamtheagent-1.jpg',
           artworkCredit: 'Vanessa Mccurry',
-           links: [
+          links: [
             {
               url: 'https://iamtheagent.bandcamp.com/album/volume-one',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
             {
               url: 'https://open.spotify.com/album/3m5qEi8ThbjTkGTbGQCo3C?si=oBtBM_KkSlucqY8toj_SVg',
-              text: 'Spotify',
+              text: 'Spotify'
             },
             {
               url: 'https://www.deezer.com/en/album/368578287',
-              text: 'Deezer',
+              text: 'Deezer'
             },
             {
               url: 'https://music.apple.com/au/album/volume-one-2021-remastered-version-ep/1650966687',
-              text: 'iTunes',
+              text: 'iTunes'
             },
             {
               url: 'https://music.youtube.com/playlist?list=OLAK5uy_nNL9jWVN2DqRYgXhHTojAQcYTLS-tnQpg',
-              text: 'YouTube',
-            },
+              text: 'YouTube'
+            }
           ],
-          date: new Date('August 30, 2010'),
-        },
-      ],
+          date: new Date('August 30, 2010')
+        }
+      ]
     },
     {
       slug: 'whalebones',
@@ -118,7 +122,7 @@ export function useArtists() {
         alt: 'Black and white photo of a musician playing acoustic guitar',
         caption: 'Whalebones, 2021',
         width: 1280,
-        height: 630,
+        height: 630
       },
       releases: [
         {
@@ -130,40 +134,40 @@ export function useArtists() {
           links: [
             {
               url: 'https://whalebones.bandcamp.com/album/every-alterations',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
             {
 
               url: 'https://open.spotify.com/album/60PRgolOzB6xfanO6RWugr?si=TGbtuxxeSm-4xjwlaNGtMQ',
-              text: 'Spotify',
+              text: 'Spotify'
             },
             {
               url: 'https://music.apple.com/au/artist/whalebones/279869764',
-              text: 'Apple Music',
+              text: 'Apple Music'
             },
             {
               url: 'https://soundcloud.com/whalebonesss/sets/every-alterations',
-              text: 'Soundcloud',
+              text: 'Soundcloud'
             },
             {
               url: 'https://music.youtube.com/playlist?list=OLAK5uy_kiSCsu1sVhbEE-zUOs9hjv_-VyCE06wZ0',
-              text: 'YouTube Music',
+              text: 'YouTube Music'
             },
             {
               url: 'https://www.deezer.com/album/372405187',
-              text: 'Deezer',
+              text: 'Deezer'
             },
             {
               url: 'https://tidal.com/browse/album/258271612',
-              text: 'Tidal',
+              text: 'Tidal'
             },
             {
               url: 'https://www.amazon.com/dp/B0BLCNTPYC/',
-              text: 'Amazon Music',
-            },
+              text: 'Amazon Music'
+            }
           ],
           date: new Date('December 1, 2022'),
-          id: 'OH-013',
+          id: 'OH-013'
         },
         {
           title: 'Return Undefined',
@@ -177,19 +181,19 @@ export function useArtists() {
           links: [
             {
               url: 'https://whalebones.bandcamp.com/track/untitled-32-undefined',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
             {
               url: 'https://open.spotify.com/track/6c29wCDfoZmeEQLVX4cFZo?si=5ba4665a18cf4b35',
-              text: 'Spotify',
+              text: 'Spotify'
             },
             {
               url: 'https://music.youtube.com/playlist?list=OLAK5uy_laX4qkdz5wpLY4F_0ZT5-tDs4YU0luhUA&feature=share',
-              text: 'YouTube',
-            },
+              text: 'YouTube'
+            }
           ],
           date: new Date('February 2, 2018'),
-          id: 'OH-012',
+          id: 'OH-012'
         },
         {
           title: '1am',
@@ -211,28 +215,28 @@ export function useArtists() {
           links: [
             {
               url: 'https://whalebones.bandcamp.com/album/1am',
-              text: 'Bandcamp',
+              text: 'Bandcamp'
             },
             {
               url: 'https://open.spotify.com/album/53yiBPYw0buIkRwp5x0TVy?si=vTlFfic1QUG0-hJepYigIQ',
-              text: 'Spotify',
+              text: 'Spotify'
             },
             {
               url: 'https://music.youtube.com/playlist?list=OLAK5uy_nKCOOU2toHxv0AvzB9MC3Awv3NUUkTisE',
-              text: 'YouTube',
-            },
+              text: 'YouTube'
+            }
           ],
           date: new Date('March 3, 2017'),
-          id: 'OH-011',
-        },
-      ],
-    },
+          id: 'OH-011'
+        }
+      ]
+    }
   ];
 
   const alumni: Artist[] = [
     {
       slug: 'bats-and-battleships',
-      name: "Bats & Battleships",
+      name: 'Bats & Battleships',
       bio: `
         <p><strong>Bats & Battleships</strong> were an Australian post-hardcore band formed in Newcastle, NSW, 2009. Band members are guitarist Jason Breen, bassist Chelsea Feneley, vocalist Nikki Fitzsummons and drummer Dylan McCrae. They self-distributed their debut record, <em>The Week That Was</em> in 2012. </p>
         <p><small>Find them on <a href="https://batsandbattleships.bandcamp.com/">Bandcamp &nearr;</a></small></p>
@@ -243,7 +247,7 @@ export function useArtists() {
         caption:
           'Bats & Battleships, performing live at The Great Northern Hotel, Newcastle',
         width: 1280,
-        height: 630,
+        height: 630
       },
       releases: [
         {
@@ -269,17 +273,17 @@ export function useArtists() {
             { title: 'Backdating Karma        ', length: '04:26' },
             { title: 'Recreational Gaslighting', length: '03:39' },
             { title: 'Hunting The Great White ', length: '06:21' },
-            { title: 'Never Touch Anything    ', length: '03:17' },
+            { title: 'Never Touch Anything    ', length: '03:17' }
           ],
           links: [
             {
               url: 'https://batsandbattleships.bandcamp.com/',
-              text: 'Bandcamp',
-            },
+              text: 'Bandcamp'
+            }
           ],
-          date: new Date('January 5, 2012'),
-        },
-      ],
+          date: new Date('January 5, 2012')
+        }
+      ]
     },
     {
       slug: 'hells',
@@ -293,38 +297,38 @@ export function useArtists() {
         alt: 'Black and white photo of a musicians performing in from of a painting',
         caption: 'HELLS (the band), performing live.',
         width: 1280,
-        height: 630,
+        height: 630
       },
       releases: [
         {
           title: 'Takes Me So Long',
           type: 'SINGLE',
           artwork: '',
-          artworkCredit: "",
+          artworkCredit: '',
           links: [
             {
               url: 'https://soundcloud.com/hellstheband/takesmesolong',
-              text: "Soundcloud",
-            },
+              text: 'Soundcloud'
+            }
           ],
-          id: "OH-006",
-          date: new Date("January 6, 2013"),
+          id: 'OH-006',
+          date: new Date('January 6, 2013')
         },
         {
-          title: "Touch U",
-          type: "SINGLE",
+          title: 'Touch U',
+          type: 'SINGLE',
           artwork: '',
-          artworkCredit: "",
+          artworkCredit: '',
           links: [
             {
               url: 'https://soundcloud.com/hellstheband/touch-u',
-              text: "Soundcloud",
-            },
+              text: 'Soundcloud'
+            }
           ],
           date: new Date('February 6, 2013'),
-          id: 'OH-007',
-        },
-      ],
+          id: 'OH-007'
+        }
+      ]
     },
     {
       slug: 'regresser',
@@ -339,53 +343,53 @@ export function useArtists() {
         caption:
           'régresser, performing in a half-pipe. Photo by Joe Andersons.',
         width: 1280,
-        height: 630,
+        height: 630
       },
       releases: [
         {
           title: 'Womb / Herds of Rhino and Buzzing Insects (.1b/.2b)',
           type: 'SINGLE',
           artwork: 'release-regresser-5.jpg',
-          artworkCredit: "Michael Shepherd, Michael Gale",
+          artworkCredit: 'Michael Shepherd, Michael Gale',
           links: [
             {
               url: 'https://open.spotify.com/album/4vESalcn343e0vMF7MIAph?si=4IhYfvg6RNyD5Tb4WcQSHg',
-              text: 'Spotify',
-            },
+              text: 'Spotify'
+            }
           ],
           date: new Date('January 1, 2015'),
-          id: 'OH-010',
+          id: 'OH-010'
         },
         {
-          title: ".2",
-          type: "EP",
+          title: '.2',
+          type: 'EP',
           artwork: 'release-regresser-3.jpg',
-          artworkCredit: "Michael Shepherd",
+          artworkCredit: 'Michael Shepherd',
           links: [
             {
               url: 'https://open.spotify.com/album/0J1BDVmqLU6MHRrnuAX51q?si=G-9CObbRTbu7Eefe7oKhZw',
-              text: 'Spotify',
-            },
+              text: 'Spotify'
+            }
           ],
-          date: new Date("January 1, 2015"),
-          id: "OH-009",
+          date: new Date('January 1, 2015'),
+          id: 'OH-009'
         },
         {
-          title: ".1",
-          type: "EP",
+          title: '.1',
+          type: 'EP',
           artwork: 'release-regresser-1.jpg',
-          artworkCredit: "Michael Shepherd",
+          artworkCredit: 'Michael Shepherd',
           links: [
             {
-              url: "https://open.spotify.com/album/5pJe7Yw950UJXRW1KJxMUW?si=nd68NHKfQ_yyDUg2XEt1Bw",
-              text: "Spotify",
-            },
+              url: 'https://open.spotify.com/album/5pJe7Yw950UJXRW1KJxMUW?si=nd68NHKfQ_yyDUg2XEt1Bw',
+              text: 'Spotify'
+            }
           ],
           date: new Date('January 1, 2014'),
-          id: 'OH-008',
-        },
-      ],
-    },
+          id: 'OH-008'
+        }
+      ]
+    }
   ];
 
   /**
@@ -405,6 +409,6 @@ export function useArtists() {
     current,
     alumni,
     all: [...current, ...alumni],
-    getArtistBySlug,
+    getArtistBySlug
   };
 }

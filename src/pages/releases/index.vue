@@ -13,7 +13,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Discover new releases from all artists and bands on the Oh Silence label',
+      content: 'Discover new releases from all artists and bands on the Oh Silence label'
     }
   ]
 })
@@ -29,9 +29,9 @@ useHead({
           :key="`release--${count}`"
           role="listitem"
         >
-          <nuxt-link :to="`/releases/${release.id}`"
-            >{{ release.title }} by {{ release.artistName }}</nuxt-link
-          >
+          <nuxt-link :to="`/releases/${release.id}`">
+            {{ release.title }} by {{ release.artistName }}
+          </nuxt-link>
         </li>
       </ul>
     </c-section>
@@ -40,13 +40,13 @@ useHead({
       <h3>Complete Release List</h3>
       <ul role="list">
         <li
-          role="listitem"
           v-for="(release, count) in sortedReleases"
           :key="`release--${count}`"
+          role="listitem"
         >
-          <nuxt-link :to="`/releases/${release.id}`"
-            >{{ release.title }} by {{ release.artistName }}</nuxt-link
-          >
+          <nuxt-link :to="`/releases/${release.id}`">
+            {{ release.title }} by {{ release.artistName }}
+          </nuxt-link>
         </li>
       </ul>
     </c-section>

@@ -4,7 +4,7 @@ import { useStorage, usePreferredDark } from '@vueuse/core'
 // Set up dynamic page titles
 useHead({
   titleTemplate: (title) => {
-    const template = `Oh Silence | The tiny, independent record label`
+    const template = 'Oh Silence | The tiny, independent record label'
     return title
       ? `${title} | ${template}`
       : `${template}`
@@ -52,7 +52,10 @@ const year = (new Date).getFullYear()
         <app-menu-button />
       </div>
     </c-section>
-    <c-section element="main" :is-container="false">
+    <c-section
+      element="main"
+      :is-container="false"
+    >
       <slot />
     </c-section>
     <c-section>
@@ -62,7 +65,13 @@ const year = (new Date).getFullYear()
       <p>Michael Gale &copy; 1987 - {{ year }}</p>
       <span class="dark-mode-switch">
         <label for="switch">
-          <input type="checkbox" id="switch" name="switch" role="switch" v-model="isDarkMode">
+          <input
+            id="switch"
+            v-model="isDarkMode"
+            type="checkbox"
+            name="switch"
+            role="switch"
+          >
           <span class="sr-only">Toggle Dark Mode</span>
           <span class="switch-emoji">
             <span>☾</span>

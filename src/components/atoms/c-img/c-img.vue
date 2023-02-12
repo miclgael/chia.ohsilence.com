@@ -29,7 +29,10 @@ const error = image.error
       class="chia-image" 
     />
   </div>
-  <div v-else class="chia-image chia-image--error">
+  <div
+    v-else
+    class="chia-image chia-image--error"
+  >
     <p>{{ errorMessage }}</p>
   </div>
 </template>

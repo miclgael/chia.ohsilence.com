@@ -3,9 +3,9 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Oh Silence Record Co is an independently owned label with resources for music production and distribution',
-    },
-  ],
+      content: 'Oh Silence Record Co is an independently owned label with resources for music production and distribution'
+    }
+  ]
 })
 </script>
 
@@ -13,7 +13,9 @@ useHead({
   <c-section> 
     <molecules-list-artists show="current" />
     <div>
-      <nuxt-link to="/artists">View all artists &rarr;</nuxt-link>
+      <nuxt-link to="/artists">
+        View all artists &rarr;
+      </nuxt-link>
     </div>
   </c-section>
 </template>

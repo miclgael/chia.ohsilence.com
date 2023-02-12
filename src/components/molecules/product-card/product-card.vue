@@ -6,13 +6,8 @@ interface Props {
 // Typed props
 defineProps<Props>()
 
-// Ensure default image is used for thumbnail
-const defaultImage = (images: ProductImage[]) => {
-  return images.find((image) => image.is_default === true)
-}
-
 // Currency formatter
-const $ = (cents: number) => (cents / 100).toLocaleString("en-AU", { style: 'currency', currency: 'AUD' })
+const $ = (cents: number) => (cents / 100).toLocaleString('en-AU', { style: 'currency', currency: 'AUD' })
 </script>
 
 <template>
@@ -25,7 +20,8 @@ const $ = (cents: number) => (cents / 100).toLocaleString("en-AU", { style: 'cur
 
     <details>
       <summary>Product Details</summary>
-      <div v-html="product.description"></div>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div v-html="product.description" />
     </details>
 
     <footer>
@@ -38,7 +34,6 @@ const $ = (cents: number) => (cents / 100).toLocaleString("en-AU", { style: 'cur
 
 
 <style scoped>
-
 .product-card {
   margin-top: 0;
   margin-bottom: 0;

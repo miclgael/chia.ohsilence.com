@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // MG's admittedly quite average helper library
-import { useHelpers } from "@miclgael/use-helpers"
+import { useHelpers } from '@miclgael/use-helpers'
 
 // Use route slug to pluck artist info
 const route = useRoute()
@@ -18,88 +18,100 @@ useHead({
   title: artist.name,
   meta: [
     {
-      name: `description`,
-      content: `${artist.name}'s artist profile on Oh Silence Record Co`,
-    },
-  ],
+      name: 'description',
+      content: `${artist.name}'s artist profile on Oh Silence Record Co`
+    }
+  ]
 });
 </script>
 
 <template>
-    <c-section v-if="artist">
-      <h3>{{ artist.name }}</h3>
+  <c-section v-if="artist">
+    <h3>{{ artist.name }}</h3>
       
-      <figure v-if="artist.image">
-        <atoms-c-img
-          :src="artist.image.src"
-          :alt="artist.image.alt"
-          :width="artist.image.width"
-          :height="artist.image.height"
-        />
-        <figcaption>
-          <em>{{ artist.image.caption }}</em>
-        </figcaption>
-      </figure>
+    <figure v-if="artist.image">
+      <atoms-c-img
+        :src="artist.image.src"
+        :alt="artist.image.alt"
+        :width="artist.image.width"
+        :height="artist.image.height"
+      />
+      <figcaption>
+        <em>{{ artist.image.caption }}</em>
+      </figcaption>
+    </figure>
 
-      <div class="blurb" v-html="artist.bio"></div>
+    <div
+      v-if="artist.bio"
+      class="blurb"
+    >
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div v-html="artist.bio" />
+    </div>
 
-      <div v-if="artist.releases.length >= 1">
-        <h3>Releases</h3>
-        <aside>
-          <ul role="list" class="release-grid">
-            <li role="listitem"
-              v-for="release in artist.releases"
-              :key="release.title.toLowerCase()"
-            >
-              <article class="grid card">
-                <atoms-c-img 
-                  v-if="release.artwork"
-                  class="card-thumbnail"
-                  :src="`${release.artwork}`"
-                  :alt="`Cover art from ${release.title} by ${release.artistName}`"
-                />
+    <div v-if="artist.releases.length >= 1">
+      <h3>Releases</h3>
+      <aside>
+        <ul
+          role="list"
+          class="release-grid"
+        >
+          <li
+            v-for="release in artist.releases"
+            :key="release.title.toLowerCase()"
+            role="listitem"
+          >
+            <article class="grid card">
+              <atoms-c-img 
+                v-if="release.artwork"
+                class="card-thumbnail"
+                :src="`${release.artwork}`"
+                :alt="`Cover art from ${release.title} by ${release.artistName}`"
+              />
 
-                <div class="card-info">
-                  <h4>
-                    <nuxt-link :to="`/releases/${release.id}`">
-                      <span>{{ release.title }}</span>
-                      <small> ({{ release.type }}) </small>
-                    </nuxt-link>
-                  </h4>
+              <div class="card-info">
+                <h4>
+                  <nuxt-link :to="`/releases/${release.id}`">
+                    <span>{{ release.title }}</span>
+                    <small> ({{ release.type }}) </small>
+                  </nuxt-link>
+                </h4>
 
-                  <p>Released {{ prettyDate(release.date) }}</p>
+                <p>Released {{ prettyDate(release.date) }}</p>
 
-                  <p>
-                    Listen on
-                    <span
-                      class="release-links"
-                      v-for="(link, count) in release.links"
-                      :key="`link--${count}`"
-                    >
-                      <a :href="link.url"> {{ link.text }} &nearr;</a
-                      >
-                      <span>{{ commaSeparator(release.links, count) }}</span>
-                    </span>
-                  </p>
+                <p>
+                  Listen on
+                  <span
+                    v-for="(link, count) in release.links"
+                    :key="`link--${count}`"
+                    class="release-links"
+                  >
+                    <a :href="link.url"> {{ link.text }} &nearr;</a>
+                    <span>{{ commaSeparator(release.links, count) }}</span>
+                  </span>
+                </p>
 
-                  <p>
-                    <nuxt-link
-                      :to="`/releases/${release.id}`"
-                      role="button"
-                      class="primary"
-                      >Learn more &rarr;</nuxt-link
-                    >
-                  </p>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </aside>
-      </div>
+                <p>
+                  <nuxt-link
+                    :to="`/releases/${release.id}`"
+                    role="button"
+                    class="primary"
+                  >
+                    Learn more &rarr;
+                  </nuxt-link>
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </aside>
+    </div>
 
     <footer>
       <div>
-        <nuxt-link to="/artists">&larr; Return to artists</nuxt-link>
+        <nuxt-link to="/artists">
+          &larr; Return to artists
+        </nuxt-link>
       </div>
     </footer>
   </c-section>

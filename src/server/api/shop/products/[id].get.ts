@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
       'User-Agent': 'NodeJS',
       'Accept': 'application/json',
       'Content-Type': 'application/json;charset=utf-8',
-      'Access-Control-Request-Method': 'GET',
+      'Access-Control-Request-Method': 'GET'
     }
   }
 

@@ -15,8 +15,13 @@ defineProps<Props>()
     <div v-if="!show || show === 'current'">
       <h3>Current Artists</h3>
       <ul>
-        <li v-for="artist in current" :key="artist.slug">
-          <nuxt-link :to="`/artists/${artist.slug}`">{{ artist.name }}</nuxt-link>
+        <li
+          v-for="artist in current"
+          :key="artist.slug"
+        >
+          <nuxt-link :to="`/artists/${artist.slug}`">
+            {{ artist.name }}
+          </nuxt-link>
         </li>
       </ul>
     </div>
@@ -25,8 +30,13 @@ defineProps<Props>()
         Alumni
       </h3>
       <ul>
-        <li v-for="artist in alumni" :key="artist.slug">
-          <nuxt-link :to="`/artists/${artist.slug}`">{{ artist.name }}</nuxt-link>
+        <li
+          v-for="artist in alumni"
+          :key="artist.slug"
+        >
+          <nuxt-link :to="`/artists/${artist.slug}`">
+            {{ artist.name }}
+          </nuxt-link>
         </li>
       </ul>
     </div>

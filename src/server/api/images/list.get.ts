@@ -11,16 +11,16 @@ const logger = useLogger()
 const options = {
   method: 'GET',
   headers: {
-    'Content-Type': 'application/json', 
+    'Content-Type': 'application/json',
     'Authorization': `Bearer ${config.CF_API_TOKEN}`
   }
 };
 
 // Fetch images from Cloudflare API
-export default defineEventHandler(async (event) => { 
+export default defineEventHandler(async (_event) => {
   return await fetch(`https://api.cloudflare.com/client/v4/accounts/${config.CF_ACCOUNT_ID}/images/v1`, options)
     .then(res => res.json())
-    .then(data => { 
+    .then(data => {
       logger.info('Fetched image data from `cloudflare/images/v1`')
       return data.result.images
     })

@@ -18,10 +18,10 @@ export function useReleases() {
         const element = all[key];
 
         // Inject the artist name into the release index
-        for (let i = 0; i < element["releases"].length; i++) {
-          const release = element["releases"][i];
-          release.artistName = element["name"];
-          release.artistSlug = element["slug"];
+        for (let i = 0; i < element['releases'].length; i++) {
+          const release = element['releases'][i];
+          release.artistName = element['name'];
+          release.artistSlug = element['slug'];
         }
 
         // @ts-ignore

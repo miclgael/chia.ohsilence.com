@@ -1,6 +1,9 @@
-export {}
+export { }
 
+// eslint-ignore-next-line
 declare global {
+
+  // eslint-disable-next-line no-unused-vars
   interface AppConfig {
     siteName: string;
     siteTagline: string;
@@ -11,6 +14,7 @@ declare global {
       href: string;
     }[]
   }
+  // eslint-disable-next-line no-unused-vars
   interface Track {
     data?: {
       id: string;
@@ -40,7 +44,8 @@ declare global {
     is_default: boolean;
     is_selected_for_publishing: boolean;
   }
-  
+
+  // eslint-disable-next-line no-unused-vars
   interface Product {
     id: string;
     title: string;
@@ -64,7 +69,7 @@ declare global {
   }
 
   // Releases must be one of these release types
-  export type ReleaseType = "LP" | "EP" | "SINGLE" | "B-SIDE" | "REMIX" | "REMASTER";
+  export type ReleaseType = 'LP' | 'EP' | 'SINGLE' | 'B-SIDE' | 'REMIX' | 'REMASTER';
   export interface ReleaseLink {
     url: string;
     text: string;

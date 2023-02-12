@@ -3,10 +3,10 @@ useHead({
   title: 'Contact',
   meta: [
     {
-      name: `description`,
-      content: `Contact information for all enquiries for Oh Silence`,
-    },
-  ],
+      name: 'description',
+      content: 'Contact information for all enquiries for Oh Silence'
+    }
+  ]
 })
 </script>
 

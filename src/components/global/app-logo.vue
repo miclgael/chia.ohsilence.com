@@ -1,5 +1,8 @@
 <template>
-  <component is="hgroup" class="hgroup--branding">
+  <component
+    :is="'hgroup'"
+    class="hgroup--branding"
+  >
     <h1 class="branding">
       <nuxt-link to="/">
         Oh<span class="mobile-hide"> Silence Record Co</span>.
@@ -14,7 +17,10 @@
 </template>
 
 <style scoped>
-hgroup { all: unset; }
+hgroup {
+  all: unset;
+}
+
 @media screen and (max-width: 768px) {
   .branding {
     font-size: 3rem;
