@@ -75,9 +75,6 @@ const year = (new Date).getFullYear()
 
 <style scoped>
 .app-header {
-  margin-top: calc(var(--typography-spacing-vertical) * 2);
-  margin-bottom: calc(var(--typography-spacing-vertical) * 2);
-
   display: grid;
   grid-template-columns: 1fr 100px;
 }
