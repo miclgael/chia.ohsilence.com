@@ -12,7 +12,7 @@ useHead({
 <template>
   <c-section> 
     <div>
-      <h2>Shop now open ✨</h2>
+      <h2>Shop now open 🛍</h2>
 
       <p>
         Launching with a long-awaited, limited run of t-shirts to support remastered EP's from I Am The Agent and brand new merch to support Whalebones' debut album release. 
@@ -23,7 +23,11 @@ useHead({
       </p>
 
       <div class="shop-cta">
-        <atoms-c-button href="https://shop.ohsilence.com/">
+        <atoms-c-button 
+          to="https://shop.ohsilence.com/" 
+          role="button"
+          external
+        >
           Visit the store &rarr;
         </atoms-c-button>
       </div>
@@ -37,7 +41,10 @@ useHead({
       </h2>
       <ul role="list">
         <li role="listitem">
-          <nuxt-link to="/interviews/musician">
+          <nuxt-link 
+            to="/interviews/musician" 
+            :external="false"
+          >
             Read: Musician - Interview with Camryn Rothenbury
           </nuxt-link>
         </li>
@@ -48,18 +55,24 @@ useHead({
         </li>
       </ul>
       <div>
-        <atoms-c-button to="/releases">
+        <nuxt-link 
+          to="/releases"
+          role="button"
+        >
           Discover new releases &rarr;
-        </atoms-c-button>
+        </nuxt-link>
       </div>
     </div>
     <br>
     <br>
     <molecules-list-artists show="current" />
     <div>
-      <atoms-c-button to="/artists">
+      <nuxt-link 
+        to="/artists"
+        role="button"
+      >
         View all artists &rarr;
-      </atoms-c-button>
+      </nuxt-link>
     </div>
     <br>
     <br>
