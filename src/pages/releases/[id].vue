@@ -8,8 +8,15 @@ const releaseId = route.params.id
 const { getReleaseById } = useReleases()
 const release = getReleaseById(releaseId as string)
 
+const releaseType = () => {
+  if (release?.type === 'EP' || release?.type === 'LP') {
+    return release.type
+  }
+  return release.type.toLocaleLowerCase()
+}
+
 useHead({
-  title: `${release.title} (${release.type?.toLocaleLowerCase()}) by ${release.artistName}`,
+  title: `${release.title} (${releaseType()}) by ${release.artistName}`,
   meta: [
     {
       name: 'description',
