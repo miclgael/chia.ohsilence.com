@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-   app: {
-    pageTransition: { 
+  app: {
+    pageTransition: {
       name: 'view',
       mode: 'out-in'
     },
@@ -10,8 +10,8 @@ export default defineNuxtConfig({
         'data-theme': 'light'
       },
       link: [
-        { 
-          rel: 'stylesheet', 
+        {
+          rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap',
           hid: 'google-font-dela-gothic-one'
         },
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  
+
   // Move @ directory to src/
   // https://nuxt.com/docs/api/configuration/nuxt-config#srcdir
   srcDir: 'src/',
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/api/configuration/nuxt-config#extends
   // @see https://github.com/nuxt/nuxt/issues/12347 
   // extends: 'github:miclgael/chia#main',
-  extends: '../chia', // <- temporary `generate` workaround
+  extends: './tmp/chia-core@0.0.1', // <- temporary `generate` workaround
 
   // Use Volar for TS support
   // https://nuxt.com/docs/api/configuration/nuxt-config#tsconfig
@@ -66,7 +66,7 @@ export default defineNuxtConfig({
   // Configure PicoCSS
   // https://nuxt.com/docs/api/configuration/nuxt-config#css 
   css: ['@picocss/pico', '@/assets/css/pico.css', '@/assets/css/global.css'],
-  
+
   runtimeConfig: {
     PRINTIFY_API_KEY: process.env.PRINTIFY_API_KEY,
     PRINTIFY_BASE_URL: process.env.PRINTIFY_BASE_URL,
@@ -74,7 +74,7 @@ export default defineNuxtConfig({
     CF_API_TOKEN: process.env.CF_API_TOKEN,
     CF_ACCOUNT_ID: process.env.CF_ACCOUNT_ID
   },
-  
+
   // Nuxt extensions to load
   // https://nuxt.com/docs/api/configuration/nuxt-config#modules
   modules: ['@nuxt/content', '@nuxt/image-edge'],
