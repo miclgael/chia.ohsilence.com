@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   // Whether your app is being unit tested.
   // https://nuxt.com/docs/api/configuration/nuxt-config#test
-  test: true,
+  test: false,
 
   // Set the nuxt source directory, for a tidier project root
   // https://nuxt.com/docs/api/configuration/nuxt-config#srcdir

@@ -1,5 +1,8 @@
 <template>
-  <component :is="tag" class="grid">
+  <component
+    :is="tag"
+    class="grid"
+  >
     <slot />
   </component>
 </template>

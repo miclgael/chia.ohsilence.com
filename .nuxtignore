@@ -1,2 +1,5 @@
 # Ignore all built-in shop services
 src/pages/shop/*
+
+**/**/*.test.*
+**/**/*.stories.*

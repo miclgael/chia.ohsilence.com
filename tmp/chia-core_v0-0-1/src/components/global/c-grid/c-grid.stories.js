@@ -12,8 +12,8 @@ export default {
   argTypes: {
     minimumColumnWidth: { control: { type: 'number', min: 8, max: 32 } },
     gap: { control: { type: 'number', min: 0, max: 10 } },
-    align: { control: { type: 'select', }, options: alignOptions },
-    justify: { control: { type: 'select', }, options: justifyOptions }
+    align: { control: { type: 'select' }, options: alignOptions },
+    justify: { control: { type: 'select' }, options: justifyOptions }
   }
 }
 
@@ -47,7 +47,7 @@ SingleImplicitCell.args = {
   default: `<div style="outline: solid 1px firebrick;">
     <h3>A single cell</h3>
     <p>Justified to the start of the grid line</p>
-  </div>`,
+  </div>`
 }
 SingleImplicitCell.storyName = 'Single cell (implicit)'
 
