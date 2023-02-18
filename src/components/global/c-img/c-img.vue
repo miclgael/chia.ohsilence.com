@@ -5,6 +5,7 @@ interface Props {
   width?: number
   height?: number
   errorMessage?: string
+  aspectRatio?: string
 }
 
 // Define typed props
@@ -49,7 +50,7 @@ const error = image.error
 }
 
 .chia-image--error {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: v-bind(aspectRatio);
   display: flex;
   align-items: center;
   justify-content: center;

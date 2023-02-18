@@ -23,12 +23,13 @@ useHead({
   <c-section v-if="release">
     <div class="release">
       <figure v-if="release.artwork">
-        <atoms-c-img
+        <c-img
           :src="release.artwork"
           :alt="`the album artwork of ${release.title} by ${release.artistName}`"
           :width="700"
           :height="700"
           :error-message="`The album artwork for ${release.title} by ${release.artistName} could not be loaded.`"
+          aspect-ratio="1:1"
         />
         <figcaption v-if="release.artworkCredit">
           <em>Artwork credit: {{ release.artworkCredit }}</em>

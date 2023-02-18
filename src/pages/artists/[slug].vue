@@ -30,7 +30,7 @@ useHead({
     <h3>{{ artist.name }}</h3>
       
     <figure v-if="artist.image">
-      <atoms-c-img
+      <c-img
         :src="artist.image.src"
         :alt="artist.image.alt"
         :width="artist.image.width"
@@ -62,11 +62,12 @@ useHead({
             role="listitem"
           >
             <article class="grid card">
-              <atoms-c-img 
+              <c-img 
                 v-if="release.artwork"
                 class="card-thumbnail"
                 :src="`${release.artwork}`"
                 :alt="`Cover art from ${release.title} by ${release.artistName}`"
+                aspect-ratio="1:1"
               />
 
               <div class="card-info">
