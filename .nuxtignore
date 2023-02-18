@@ -1,0 +1,2 @@
+# Ignore all built-in shop services
+src/pages/shop/*
