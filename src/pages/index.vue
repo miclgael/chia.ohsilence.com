@@ -12,16 +12,24 @@ useHead({
 <template>
   <c-section> 
     <div>
-      <h2>Shop now open</h2>
+      <h2>Shop now open ✨</h2>
 
       <p>
-        Launching with a long-awaited, limited merch run from I Am The Agent and merch to support Whalebones debut album release. More to come soon!
+        Launching with a long-awaited, limited run of t-shirts to support remastered EP's from I Am The Agent and brand new merch to support Whalebones' debut album release. 
       </p>
 
-      <atoms-c-button href="https://shop.ohsilence.com/">
-        Visit the store &rarr;
-      </atoms-c-button>
+      <p>
+        All products are ethicially sourced cotton materials, printed in Australia and shipped worldwide.
+      </p>
+
+      <div class="shop-cta">
+        <atoms-c-button href="https://shop.ohsilence.com/">
+          Visit the store &rarr;
+        </atoms-c-button>
+      </div>
     </div>
+    <br>
+    <br>
 
     <div>
       <h2>
@@ -39,14 +47,27 @@ useHead({
           </nuxt-link>
         </li>
       </ul>
+      <div>
+        <atoms-c-button to="/releases">
+          Discover new releases &rarr;
+        </atoms-c-button>
+      </div>
     </div>
-
+    <br>
+    <br>
     <molecules-list-artists show="current" />
-
     <div>
-      <nuxt-link to="/artists">
+      <atoms-c-button to="/artists">
         View all artists &rarr;
-      </nuxt-link>
+      </atoms-c-button>
     </div>
+    <br>
+    <br>
   </c-section>
 </template>
+
+<style scoped>
+.shop-cta {
+  max-width: fit-content;
+}
+</style>
