@@ -12,6 +12,7 @@ useHead({
 <template>
   <c-section> 
     <div>
+<!--
       <h2>Shop now open 🛍</h2>
 
       <p>
@@ -32,9 +33,10 @@ useHead({
         </atoms-c-button>
       </div>
     </div>
-    <br>
-    <br>
 
+    <br>
+    <br>
+-->
     <div>
       <h2>
         Latest content
