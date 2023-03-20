@@ -11,8 +11,10 @@ useHead({
 
 <template>
   <c-section> 
-    <div>
+
 <!--
+
+    <div>
       <h2>Shop now open 🛍</h2>
 
       <p>
