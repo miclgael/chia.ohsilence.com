@@ -27,10 +27,6 @@ const links = reactive([
     label: 'Releases'
   },
   {
-    to: 'https://shop.ohsilence.com/',
-    label: 'Shop'
-  },
-  {
     to: '/contact',
     label: 'Contact'
   }
