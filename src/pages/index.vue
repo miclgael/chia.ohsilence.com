@@ -11,34 +11,6 @@ useHead({
 
 <template>
   <c-section> 
-
-<!--
-
-    <div>
-      <h2>Shop now open 🛍</h2>
-
-      <p>
-        Launching with a long-awaited, limited run of t-shirts to support remastered EP's from I Am The Agent and brand new merch to support Whalebones' debut album release. 
-      </p>
-
-      <p>
-        All products are ethicially sourced cotton materials, printed in Australia and shipped worldwide.
-      </p>
-
-      <div class="shop-cta">
-        <atoms-c-button 
-          to="https://shop.ohsilence.com/" 
-          role="button"
-          external
-        >
-          Visit the store &rarr;
-        </atoms-c-button>
-      </div>
-    </div>
-
-    <br>
-    <br>
--->
     <div>
       <h2>
         Latest content
