@@ -47,7 +47,7 @@ const year = (new Date).getFullYear()
 <template>
   <div>
     <nuxt-loading-indicator 
-      height="4" 
+      :height="4" 
       color="#390098" 
     />
     <c-section element="header">

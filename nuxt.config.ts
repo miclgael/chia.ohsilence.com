@@ -73,7 +73,10 @@ export default defineNuxtConfig({
     PRINTIFY_BASE_URL: process.env.PRINTIFY_BASE_URL,
     PRINTIFY_SHOP_ID: process.env.PRINTIFY_SHOP_ID,
     CF_API_TOKEN: process.env.CF_API_TOKEN,
-    CF_ACCOUNT_ID: process.env.CF_ACCOUNT_ID
+    CF_ACCOUNT_ID: process.env.CF_ACCOUNT_ID,
+    github: {
+      token: process.env.GITHUB_ACCESS_TOKEN || '',
+    }
   },
 
   // Nuxt extensions to load

@@ -2,39 +2,34 @@
 interface Props {
   src: string
   alt: string
-  width?: number
-  height?: number
-  errorMessage?: string
-  aspectRatio?: string
+  width?: number|string
+  height?: number|string
+  large?: boolean
 }
 
 // Define typed props
 const props = defineProps<Props>()
 
-// Use the image hook, which returns a public and low-res "blur" image.
-const image = await useImageSingle(props.src)
+// Fetch the large image (string is the src)
+const largeSrc = async (src:string) => {
+  return await $fetch(`/api/image/${src}`)
+}
 
-// Error handling
-const error = image.error
+// Determine if we need to use the large image
+const safeSrc = props.large === true
+  ? await largeSrc(props.src) 
+  : `/api/image/${props.src}`
+
 </script>
 
 <template>
-  <div v-if="src && !error">
-    <nuxt-img 
-      :src="image.public" 
-      :placeholder="image.blur"
+  <div v-if="src">
+    <img
+      :src="safeSrc"
       :alt="props.alt" 
-      :width="`${props.width}px`"
-      :height="`${props.height}px`"
       loading="lazy" 
       class="chia-image" 
     />
-  </div>
-  <div
-    v-else
-    class="chia-image chia-image--error"
-  >
-    <p>{{ errorMessage }}</p>
   </div>
 </template>
 
@@ -47,14 +42,5 @@ const error = image.error
   max-height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.chia-image--error {
-  aspect-ratio: v-bind(aspectRatio);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  color: #fff;
 }
 </style>

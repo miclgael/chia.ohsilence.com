@@ -17,9 +17,10 @@
 
 ::c-img
 ---
-src: /interview-musician-header.png
+src: interview-musician-header.png
 alt: thumbnails of Camryn orchestrated around a YouTube video for rain sounds
 loading: lazy
+large: true
 ---
 ::
 
@@ -47,7 +48,7 @@ Could you speak more about the production and decision making process? e.g. How 
 
   ::c-img 
   ---
-  src: /interview-musician-child-cam.jpg
+  src: interview-musician-child-cam.jpg
   alt: an even older photo of Camryn as a child
   loading: lazy
   ---
@@ -72,7 +73,7 @@ As I got older, I had a difficult time reconciling this approach with my peers -
   
   ::c-img 
   ---
-  src: /interview-musician-cam-james.jpg
+  src: interview-musician-cam-james.jpg
   alt: a very old photo of Camryn and James
   loading: lazy
   ---
@@ -89,7 +90,7 @@ Sorry - I’m kind of rambling. To answer the question, _Musician_ came together
   
   ::c-img 
   ---
-  src: /interview-musician-personal-touch.jpg
+  src: interview-musician-personal-touch.jpg
   alt: Black and white album cover of Personal Touch
   loading: lazy
   ---
@@ -114,7 +115,7 @@ I think working on other projects, such as scoring video work and writing the Eg
 
   ::c-img 
   ---
-  src: /interview-musician-michael-douglas.jpg
+  src: interview-musician-michael-douglas.jpg
   alt: A picture of Michael Douglas from the 1993 film Falling Down
   loading: lazy
   ---

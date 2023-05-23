@@ -19,12 +19,12 @@ defineProps<Props>()
         role="listitem"
         class="image-list__item"
       >
-        <nuxt-img
+        <c-img
           :src="image.src"
           alt="Black and white t-shirt with a logo on the front"
           loading="lazy"
-          width="1200"
-          height="1200"
+          :width="1200"
+          :height="1200"
           class="image-carousel-grid--image"
         />
         <span
