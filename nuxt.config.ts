@@ -69,14 +69,10 @@ export default defineNuxtConfig({
   css: ['@picocss/pico', '@/assets/css/pico.css', '@/assets/css/global.css'],
 
   runtimeConfig: {
-    PRINTIFY_API_KEY: process.env.PRINTIFY_API_KEY,
-    PRINTIFY_BASE_URL: process.env.PRINTIFY_BASE_URL,
-    PRINTIFY_SHOP_ID: process.env.PRINTIFY_SHOP_ID,
-    CF_API_TOKEN: process.env.CF_API_TOKEN,
-    CF_ACCOUNT_ID: process.env.CF_ACCOUNT_ID,
     github: {
-      token: process.env.GITHUB_ACCESS_TOKEN || '',
-    }
+      token: process.env.GITHUB_ACCESS_TOKEN || ''
+    },
+    IMAGE_API_ENDPOINT: process.env.IMAGE_API_ENDPOINT || ''
   },
 
   // Nuxt extensions to load

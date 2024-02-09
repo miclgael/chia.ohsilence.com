@@ -33,41 +33,34 @@ h6 {
 /* Dark theme (Manual) */
 /* If set with button/etc. */
 :root[data-theme="dark"] {
-  --primary: #FFF8E7;
-  --primary-hover: #ffeec5;
+  --primary: #390098;
+  --primary-hover: #2f007b;
   /* --primary-focus: #FF9CDD; */
-  --primary-inverse: #211202;
-  --background-color: #211202;
+  --primary-inverse: #fff8e7;
+  --background-color: #fff8e7;
 
-  --h1-color: #FF9CDD;
-  --h2-color: #FF9CDD;
-  --h3-color: #FF9CDD;
-  --h4-color: #FF9CDD;
-  --h5-color: #FF9CDD;
-  --h6-color: #FF9CDD;
-
-  --color: #FFF8E7;
-  --muted-color: #8cb0c8;
+  --h1-color: #390098;
+  --h2-color: #390098;
+  --h3-color: #390098;
+  --h4-color: #390098;
+  --h5-color: #390098;
+  --h6-color: #390098;
 }
 
-/* Dark theme (Auto) */
-/* Automatically enabled if user has Dark mode enabled */
+/* CURRENTLY DISABLED. (SET THE SAME AS LIGHT) */
 @media only screen and (prefers-color-scheme: dark) {
   :-root:not([data-theme="light"]) {
-    --primary: #FFF8E7;
-    --primary-hover: #ffeec5;
-    /* --primary-focus: #FF9CDD; */
-    --primary-inverse: #211202;
-    --background-color: #211202;
+   --primary: #390098;
+  --primary-hover: #2f007b;
+  /* --primary-focus: #FF9CDD; */
+  --primary-inverse: #fff8e7;
+  --background-color: #fff8e7;
 
-    --h1-color: #FF9CDD;
-    --h2-color: #FF9CDD;
-    --h3-color: #FF9CDD;
-    --h4-color: #FF9CDD;
-    --h5-color: #FF9CDD;
-    --h6-color: #FF9CDD;
-
-    --color: #FFF8E7;
-    --muted-color: #8cb0c8;
+  --h1-color: #390098;
+  --h2-color: #390098;
+  --h3-color: #390098;
+  --h4-color: #390098;
+  --h5-color: #390098;
+  --h6-color: #390098;
   }
 }

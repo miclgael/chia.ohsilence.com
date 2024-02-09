@@ -8,6 +8,8 @@ node_modules
 .env
 dist
 
+*.tar.gz
+
 # OS Files
 .DS_Store
 

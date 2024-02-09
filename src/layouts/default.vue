@@ -11,34 +11,34 @@ useHead({
   }
 })
 
-// Get User's preference from browser/OS
-const prefersDark = usePreferredDark()
+// // Get User's preference from browser/OS
+// const prefersDark = usePreferredDark()
 
-// Store the users preference or fallback to false
-const storedTheme = useStorage('use-dark-theme', prefersDark || false)
+// // Store the users preference or fallback to false
+// const storedTheme = useStorage('use-dark-theme', prefersDark || false)
 
-// Either remember, or set false and let global preference decide
-const isDarkMode = ref(storedTheme.value)
+// // Either remember, or set false and let global preference decide
+// const isDarkMode = ref(storedTheme.value)
 
-// Set `data-theme` attribute on the `html` element
-const toggleTheme = () => {
-  const update = (!isDarkMode.value) ? 'light' : 'dark'
+// // Set `data-theme` attribute on the `html` element
+// const toggleTheme = () => {
+//   const update = (!isDarkMode.value) ? 'light' : 'dark'
 
-  storedTheme.value = isDarkMode.value
+//   storedTheme.value = isDarkMode.value
 
-  const html = document.querySelector('html')
-  html?.setAttribute('data-theme', update)
-}
+//   const html = document.querySelector('html')
+//   html?.setAttribute('data-theme', update)
+// }
 
-// Set correct theme on toggle
-onMounted(() => {
-  toggleTheme()
-})
+// // Set correct theme on toggle
+// onMounted(() => {
+//   toggleTheme()
+// })
 
-// Watch reactive property for change and toggle
-watch(() => isDarkMode.value, () => {
-  toggleTheme()
-});
+// // Watch reactive property for change and toggle
+// watch(() => isDarkMode.value, () => {
+//   toggleTheme()
+// });
 
 // Copyright year
 const year = (new Date).getFullYear()
@@ -66,8 +66,8 @@ const year = (new Date).getFullYear()
       <molecules-c-social-links />
     </c-section>
     <c-section element="footer">
-      <p>Michael Gale &copy; 1987 - {{ year }}</p>
-      <span class="dark-mode-switch">
+      <p><a href="https://www.michaelgale.dev">Michael Gale</a> &copy; 1987 - {{ year }}</p>
+      <!-- <span class="dark-mode-switch">
         <label for="switch">
           <input
             id="switch"
@@ -81,7 +81,7 @@ const year = (new Date).getFullYear()
             <span>☾</span>
           </span>
         </label>
-      </span>
+      </span> -->
     </c-section>
   </div>
 </template>
