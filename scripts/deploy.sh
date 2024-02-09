@@ -1,9 +1,6 @@
 # import vars from .env
 export $(egrep -v '^#' .env | xargs)
 
-CODE_PATH=~/Code/projects/chia.ohsilence.com
-DEPLOY_PATH=/Volumes/Docker/app-storage/websites/www.ohsilence.com
-
 # check if build flag was given (--build)
 if [ "$1" == "--build" ]; then
   echo "Building the app"
