@@ -29,7 +29,7 @@ echo "Removing existing .output folder"
 rm -rf $DEPLOY_PATH/.output
 
 echo "Unzipping on the server (will take a while)"
-tar -xzf $DEPLOY_PATH/.output.tar.gz
+tar -xzf $DEPLOY_PATH/.output.tar.gz -C $DEPLOY_PATH
 echo "Done"
 
 echo "Cleaning up - server"
