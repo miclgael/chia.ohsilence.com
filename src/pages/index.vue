@@ -17,6 +17,11 @@ useHead({
       </h2>
       <ul role="list">
         <li role="listitem">
+          <nuxt-link to="/releases/OH-014">
+            Listen: Whalebones - NO SOUL DRINK THE BLEACH (SINGLE)
+          </nuxt-link>
+        </li>
+        <li role="listitem">
           <nuxt-link 
             to="/interviews/musician" 
             :external="false"

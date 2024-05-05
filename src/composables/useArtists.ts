@@ -28,7 +28,7 @@ export function useArtists() {
               text: 'Bandcamp'
             },
             {
-              url: 'https://open.spotify.com/album/7fcUO1SEYHqRaSW6Xh6G9C?si=iWSGdB5wRtOWEhWrxKrKiQ',
+              url: 'https://open.spotify.com/album/7fcUO1SEYHqRaSW6Xh6G9C',
               text: 'Spotify'
             },
             {
@@ -72,7 +72,7 @@ export function useArtists() {
               text: 'Bandcamp'
             },
             {
-              url: 'https://open.spotify.com/album/3jt0OkxFw35gh2rJnSiARL?si=oArrjkMkQ0ebpsz-kYLpZw',
+              url: 'https://open.spotify.com/album/3jt0OkxFw35gh2rJnSiARL',
               text: 'Spotify'
             }
           ],
@@ -90,7 +90,7 @@ export function useArtists() {
               text: 'Bandcamp'
             },
             {
-              url: 'https://open.spotify.com/album/3m5qEi8ThbjTkGTbGQCo3C?si=oBtBM_KkSlucqY8toj_SVg',
+              url: 'https://open.spotify.com/album/3m5qEi8ThbjTkGTbGQCo3C',
               text: 'Spotify'
             },
             {
@@ -114,7 +114,7 @@ export function useArtists() {
       slug: 'whalebones',
       name: 'Whalebones',
       bio: `
-        <p><strong>Whalebones</strong> is the solo project of song-writer/producer Michael Gale, who creates dark electronic and neo-grunge emo inspired tunes.</p>
+        <p><strong>Whalebones</strong> is the solo project of Australian song-writer/producer Michael Gale, who creates dark electronic and neo-grunge emo inspired tunes.</p>
         <p><small>Find them on <a href="https://whalebones.bandcamp.com/">Bandcamp &nearr;</a>, <a href="https://open.spotify.com/artist/3tuDjSTKjQ9pujIK4kz6Us">Spotify &nearr;</a>, <a href="https://www.deezer.com/us/album/267163502">Deezer &nearr;</a> and <a href="https://music.youtube.com/browse/UCTE8P3IdKdEMrMduNX2Xg_g">YouTube &nearr;</a></small></p>
       `,
       image: {
@@ -125,6 +125,41 @@ export function useArtists() {
         height: 630
       },
       releases: [
+        {
+          title: 'NO SOUL DRINK THE BLEACH',
+          type: 'SINGLE',
+          id: 'OH-014',
+          date: new Date('February 11, 2024'),
+          artwork: 'release-whalebones-4.jpg',
+          artworkCredit: 'Michael Gale',
+          notes: `
+            Words + Music / Production by Michael Gale.<br>
+            Mixed + Mastered by  Michael Gale.<br>
+            Artwork by Michael Gale.`,
+          links: [{
+            url: 'https://whalebones.bandcamp.com/track/no-soul-drink-the-bleach',
+            text: 'Bandcamp'
+          },
+          {
+            url: 'https://open.spotify.com/track/6H4XYYTTfgpeVoMTNNr5uI',
+            text: 'Spotify'
+          },
+          {
+            url: 'https://music.youtube.com/watch?v=NlGt86bw46A',
+            text: 'YouTube'
+          },
+          {
+            url: 'https://www.deezer.com/us/track/2661978312',
+            text: 'Deezer'
+          },
+          {
+            url: 'https://music.apple.com/us/album/no-soul-drink-the-bleach/1731306773?i=1731306774',
+            text: 'Apple Music'
+          }],
+          tracks: [
+            { title: 'NO SOUL DRINK THE BLEACH', length: '03:08' }
+          ]
+        },
         {
           title: 'Every Alterations',
           type: 'LP',
@@ -138,7 +173,7 @@ export function useArtists() {
             },
             {
 
-              url: 'https://open.spotify.com/album/60PRgolOzB6xfanO6RWugr?si=TGbtuxxeSm-4xjwlaNGtMQ',
+              url: 'https://open.spotify.com/album/60PRgolOzB6xfanO6RWugr',
               text: 'Spotify'
             },
             {
@@ -167,7 +202,23 @@ export function useArtists() {
             }
           ],
           date: new Date('December 1, 2022'),
-          id: 'OH-013'
+          id: 'OH-013',
+          tracks: [
+            { title: 'Miserable', length: '01:33' },
+            { title: 'It Is Dark Inside Your Body', length: '01:45' },
+            { title: 'Intrusion', length: '00:31' },
+            { title: 'Your Bones Are Wet', length: '00:59' },
+            { title: 'See-saw', length: '04:20' },
+            { title: 'Climbing Out', length: '00:48' },
+            { title: 'A Mask of Rainbows Unicorn', length: '04:28' },
+            { title: 'I Am Not Afraid Of', length: '04:12' },
+            { title: 'Carving Name In Desk', length: '00:12' },
+            { title: 'Beds', length: '03:32' },
+            { title: 'MISSINGNO.', length: '01:32' },
+            { title: 'Yuck', length: '02:31' },
+            { title: 'Weird Séance', length: '05:24' },
+            { title: 'Castle', length: '03:42' }
+          ]
         },
         {
           title: 'Return Undefined',
@@ -184,7 +235,7 @@ export function useArtists() {
               text: 'Bandcamp'
             },
             {
-              url: 'https://open.spotify.com/track/6c29wCDfoZmeEQLVX4cFZo?si=5ba4665a18cf4b35',
+              url: 'https://open.spotify.com/track/6c29wCDfoZmeEQLVX4cFZo',
               text: 'Spotify'
             },
             {
@@ -193,7 +244,10 @@ export function useArtists() {
             }
           ],
           date: new Date('February 2, 2018'),
-          id: 'OH-012'
+          id: 'OH-012',
+          tracks: [
+            { title: 'Untitled 32 (Undefined)', length: '03:59' }
+          ]
         },
         {
           title: '1am',
@@ -218,7 +272,7 @@ export function useArtists() {
               text: 'Bandcamp'
             },
             {
-              url: 'https://open.spotify.com/album/53yiBPYw0buIkRwp5x0TVy?si=vTlFfic1QUG0-hJepYigIQ',
+              url: 'https://open.spotify.com/album/53yiBPYw0buIkRwp5x0TVy',
               text: 'Spotify'
             },
             {
@@ -227,7 +281,11 @@ export function useArtists() {
             }
           ],
           date: new Date('March 3, 2017'),
-          id: 'OH-011'
+          id: 'OH-011',
+          tracks: [
+            { title: '1am',        length: '03:59' },
+            { title: '1am (live)', length: '04:37' }
+          ]
         }
       ]
     }
@@ -335,7 +393,7 @@ export function useArtists() {
       name: 'régresser',
       bio: `
         <p><strong>régresser</strong> were a chaotic hardcore sextet from Newcastle, Australia. They released two EPs and two singles before permanently disbanding in 2015.</p>
-        <p><small>Find them on <a href="https://open.spotify.com/artist/7bjvN4iwio7i0ibrhqvQAg?si=cLaRsH2SR6iJE17kVTnEXw">Spotify &nearr;</a>, <a href="https://music.apple.com/us/artist/r%C3%A9gresser/819619810">Apple Music &nearr;</a>, <a href="https://music.youtube.com/channel/UCzW3ZsxgkOiQBiOZ9fAsC5Q">YouTube &nearr;</a> and <a href="https://listen.tidal.com/album/189662332">Tidal &nearr;</a></small></p>
+        <p><small>Find them on <a href="https://open.spotify.com/artist/7bjvN4iwio7i0ibrhqvQAg">Spotify &nearr;</a>, <a href="https://music.apple.com/us/artist/r%C3%A9gresser/819619810">Apple Music &nearr;</a>, <a href="https://music.youtube.com/channel/UCzW3ZsxgkOiQBiOZ9fAsC5Q">YouTube &nearr;</a> and <a href="https://listen.tidal.com/album/189662332">Tidal &nearr;</a></small></p>
       `,
       image: {
         src: 'banner-regresser.jpg',
@@ -347,13 +405,50 @@ export function useArtists() {
       },
       releases: [
         {
+          title: 'Trepanning',
+          type: 'LIVE',
+          artwork: 'release-regresser-6.jpg',
+          artworkCredit: 'Michael Shepherd',
+          tracks: [
+            { title: 'Preamble (Live)', length: '0:47' },
+            { title: 'Herds of Rhino and Buzzing Insects (Live)', length: '3:41' },
+            { title: 'A Gold Crown (Live)', length: '1:46' },
+            { title: 'A Black Cloud (Live)', length: '4:04' },
+            { title: 'A Knot In Your Back (Live)', length: '2:44' },
+            { title: 'A Question (Live)', length: '2:31' },
+            { title: 'A Statement (Live)', length: '2:14' },
+            { title: 'A Forum (Live)', length: '3:21' },
+            { title: 'Womb (Live)', length: '2:48' }
+          ],
+          links: [
+            {
+              url: 'https://open.spotify.com/album/0MKUvk8rA9kZDAboGrSee8',
+              text: 'Spotify'
+            },
+            {
+              url: 'https://www.deezer.com/us/album/417311887',
+              text: 'Deezer'
+            },
+            {
+              url: 'https://music.apple.com/us/album/trepanning-live/1677080041',
+              text: 'Apple Music'
+            },
+            {
+              url: 'https://music.youtube.com/playlist?list=OLAK5uy_mwKEZyNxhNCdE4unVqO3WGptkZ1kvgy08',
+              text: 'YouTube'
+            }
+          ],
+          date: new Date('January 1, 2015'),
+          id: 'OH-015'
+        },
+        {
           title: 'Womb / Herds of Rhino and Buzzing Insects (.1b/.2b)',
           type: 'SINGLE',
           artwork: 'release-regresser-5.jpg',
           artworkCredit: 'Michael Shepherd, Michael Gale',
           links: [
             {
-              url: 'https://open.spotify.com/album/4vESalcn343e0vMF7MIAph?si=4IhYfvg6RNyD5Tb4WcQSHg',
+              url: 'https://open.spotify.com/album/4vESalcn343e0vMF7MIAph',
               text: 'Spotify'
             }
           ],
@@ -367,7 +462,7 @@ export function useArtists() {
           artworkCredit: 'Michael Shepherd',
           links: [
             {
-              url: 'https://open.spotify.com/album/0J1BDVmqLU6MHRrnuAX51q?si=G-9CObbRTbu7Eefe7oKhZw',
+              url: 'https://open.spotify.com/album/0J1BDVmqLU6MHRrnuAX51q',
               text: 'Spotify'
             }
           ],
@@ -381,7 +476,7 @@ export function useArtists() {
           artworkCredit: 'Michael Shepherd',
           links: [
             {
-              url: 'https://open.spotify.com/album/5pJe7Yw950UJXRW1KJxMUW?si=nd68NHKfQ_yyDUg2XEt1Bw',
+              url: 'https://open.spotify.com/album/5pJe7Yw950UJXRW1KJxMUW',
               text: 'Spotify'
             }
           ],

@@ -69,7 +69,7 @@ declare global {
   }
 
   // Releases must be one of these release types
-  export type ReleaseType = 'LP' | 'EP' | 'SINGLE' | 'B-SIDE' | 'REMIX' | 'REMASTER';
+  export type ReleaseType = 'LP' | 'EP' | 'SINGLE' | 'B-SIDE' | 'REMIX' | 'REMASTER' | 'LIVE';
   export interface ReleaseLink {
     url: string;
     text: string;
@@ -79,9 +79,11 @@ declare global {
     length: string;
   }
 
+  export type OhSilenceReleaseId = `OH-${string|number}` | `OH-${string|number}R`;
+
   // Releases must follow this template
   export interface Release {
-    id: string;
+    id: OhSilenceReleaseId;
     title: string;
     type: ReleaseType;
     artwork: string | null;
