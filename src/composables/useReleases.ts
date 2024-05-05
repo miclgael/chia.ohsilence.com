@@ -1,3 +1,5 @@
+import { useArtists } from '@/composables/useArtists'
+
 export function useReleases() {
  /**
   * Loop through artist and gather their releases
