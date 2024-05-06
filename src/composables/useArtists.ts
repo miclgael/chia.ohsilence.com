@@ -146,11 +146,13 @@ export function useArtists() {
             { title: 'GUMMY BEAR', length: '04:23' },
             { title: 'INSIDE', length: '03:21' },
             { title: 'I AM NOT AFRAID OF (TURBO MIX)', length: '04:16' },
+            { title: 'MIND IS FAILING', length: '02:40' },
             { title: 'LOADING SCREEN', length: '00:48' },
             { title: 'NO SOUL', length: '03:08' },
             { title: 'HOPE', length: '03:27' },
+            { title: 'BLOOD BROTHERS II', length: '03:34' },
             { title: '3AM (WHERE THE WILD THINGS ARE)', length: '01:24' },
-            { title: '6AM (LET YOU DROWN)', length: '03:27' }
+            { title: '6AM (LET YOU DROWN)', length: '06:04' }
           ]
         },
         {
