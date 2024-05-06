@@ -185,7 +185,7 @@ export function useArtists() {
             text: 'Apple Music'
           }],
           tracks: [
-            { title: 'NO SOUL DRINK THE BLEACH', length: '03:08' }
+            { title: 'NO SOUL', length: '03:08' }
           ]
         },
         {
