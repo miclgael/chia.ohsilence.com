@@ -69,7 +69,7 @@ useHead({
             :key="`link--${count}`"
             class="release-links"
           >
-            <a :href="link.url"> {{ link.text }} {{ count > 1 && link.text === 'Bandcamp' ? '(Preferred)' : null }} &nearr; </a>
+            <a :href="link.url"> {{ link.text }} {{ release.links.length > 1 && link.text === 'Bandcamp' ? '(Preferred)' : null }} &nearr;</a>
             <span>{{ commaSeparator(release.links, count) }}</span>
           </span>
         </c-section>
