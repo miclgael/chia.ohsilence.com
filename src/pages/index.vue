@@ -36,7 +36,7 @@ useHead({
           :to="`/releases/${featured.id}`" 
           role="button"
         >
-          Learn more ( ˘ ³˘)♥ &rarr;
+          Learn more &rarr;
         </nuxt-link>
       </p>
       <h2>
