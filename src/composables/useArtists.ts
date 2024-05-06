@@ -126,7 +126,35 @@ export function useArtists() {
       },
       releases: [
         {
-          title: 'NO SOUL DRINK THE BLEACH',
+          title: 'GLAMOUR BOY',
+          type: 'LP',
+          id: 'OH-016',
+          date: new Date('June 14, 2024'),
+          artwork: 'release-whalebones-5.jpg',
+          artworkCredit: 'Michael Gale',
+          notes: `
+            Words + Music / Production by Michael Gale.<br>
+            Mixed + Mastered by  Michael Gale.<br>
+            Artwork by Michael Gale.`,
+          links: [
+            {
+              url: 'https://whalebones.bandcamp.com/album/glamour-boy',
+              text: 'Bandcamp'
+            }
+          ],
+          tracks: [
+            { title: 'GUMMY BEAR', length: '04:23' },
+            { title: 'INSIDE', length: '03:21' },
+            { title: 'I AM NOT AFRAID OF (TURBO MIX)', length: '04:16' },
+            { title: 'LOADING SCREEN', length: '00:48' },
+            { title: 'NO SOUL', length: '03:08' },
+            { title: 'HOPE', length: '03:27' },
+            { title: '3AM (WHERE THE WILD THINGS ARE)', length: '01:24' },
+            { title: '6AM (LET YOU DROWN)', length: '03:27' }
+          ]
+        },
+        {
+          title: 'NO SOUL',
           type: 'SINGLE',
           id: 'OH-015',
           date: new Date('February 11, 2024'),
@@ -137,7 +165,7 @@ export function useArtists() {
             Mixed + Mastered by  Michael Gale.<br>
             Artwork by Michael Gale.`,
           links: [{
-            url: 'https://whalebones.bandcamp.com/track/no-soul-drink-the-bleach',
+            url: 'https://whalebones.bandcamp.com/track/no-soul-2',
             text: 'Bandcamp'
           },
           {
