@@ -21,3 +21,5 @@ mockData.json
 
 # Remove local assets stored in cloud storage
 images-offline
+
+*.zip
