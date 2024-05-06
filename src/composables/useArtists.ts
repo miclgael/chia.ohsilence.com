@@ -128,7 +128,7 @@ export function useArtists() {
         {
           title: 'NO SOUL DRINK THE BLEACH',
           type: 'SINGLE',
-          id: 'OH-014',
+          id: 'OH-015',
           date: new Date('February 11, 2024'),
           artwork: 'release-whalebones-4.jpg',
           artworkCredit: 'Michael Gale',
@@ -438,8 +438,8 @@ export function useArtists() {
               text: 'YouTube'
             }
           ],
-          date: new Date('January 1, 2015'),
-          id: 'OH-015'
+          date: new Date('Marcg 1, 2023'),
+          id: 'OH-014'
         },
         {
           title: 'Womb / Herds of Rhino and Buzzing Insects (.1b/.2b)',

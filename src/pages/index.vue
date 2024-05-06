@@ -17,7 +17,7 @@ useHead({
       </h2>
       <ul role="list">
         <li role="listitem">
-          <nuxt-link to="/releases/OH-014">
+          <nuxt-link to="/releases/OH-015">
             Listen: Whalebones - NO SOUL DRINK THE BLEACH (SINGLE)
           </nuxt-link>
         </li>
