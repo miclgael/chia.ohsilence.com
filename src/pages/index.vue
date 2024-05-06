@@ -17,8 +17,8 @@ useHead({
       </h2>
       <ul role="list">
         <li role="listitem">
-          <nuxt-link to="/releases/OH-015">
-            Listen: Whalebones - NO SOUL DRINK THE BLEACH (SINGLE)
+          <nuxt-link to="/releases/OH-016">
+            Listen: Whalebones - GLAMOUR BOY (LP)
           </nuxt-link>
         </li>
         <li role="listitem">
@@ -32,11 +32,6 @@ useHead({
             :external="false"
           >
             Read: Musician - Interview with Camryn Rothenbury
-          </nuxt-link>
-        </li>
-        <li role="listitem">
-          <nuxt-link to="/releases/OH-013">
-            Listen: Whalebones - Every Alterations (LP)
           </nuxt-link>
         </li>
       </ul>
