@@ -4,14 +4,14 @@ export default defineAppConfig({
   siteAuthor: 'Michael Gale',
   socialMedia: [
     {
-      text: 'Instagram',
-      icon: 'instagram',
-      href: 'https://www.instagram.com/ohsilencerecords'
-    },
-    {
       text: 'Spotify Playlist',
       icon: 'spotify',
       href: 'https://open.spotify.com/playlist/6lm8B1mf1v60pwyf7rkplp?si=6488de3446814a5c'
+    },
+    {
+      text: 'Mastodon',
+      icon: 'mastodon',
+      href: 'https://sonomu.club/@ohsilencerecords'
     }
   ]
 })
