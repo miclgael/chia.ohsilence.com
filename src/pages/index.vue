@@ -22,6 +22,11 @@ useHead({
           </nuxt-link>
         </li>
         <li role="listitem">
+          <nuxt-link to="/releases/OH-014">
+            Listen: régresser - Trepanning (LIVE)
+          </nuxt-link>
+        </li>
+        <li role="listitem">
           <nuxt-link 
             to="/interviews/musician" 
             :external="false"
