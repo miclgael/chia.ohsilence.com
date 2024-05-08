@@ -488,7 +488,7 @@ export function useArtists() {
         {
           title: '.2',
           type: 'EP',
-          artwork: 'release-regresser-3.jpg',
+          artwork: 'release-regresser-2.jpg',
           artworkCredit: 'Michael Shepherd',
           links: [
             {
