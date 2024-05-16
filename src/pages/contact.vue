@@ -16,6 +16,6 @@ useHead({
     <p>For all enquiries, please email <a href="mailto:ohsilencerecordco@gmail.com">ohsilencerecordco@gmail.com &nearr;</a></p>
     <h3>For updates</h3>
     <!--eslint-disable-next-line -->
-    <p>Follow us on <a href="https://sonomu.club/@ohsilencerecords" target="_blank" rel="noopener noreferrer">Mastodon &nearr;</a></p>
+    <p>Follow us on <a href="https://hachyderm.io/@miclgael" target="_blank" rel="noopener noreferrer">Mastodon &nearr;</a></p>
   </c-section>
 </template>

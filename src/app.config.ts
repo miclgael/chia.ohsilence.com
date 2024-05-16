@@ -11,7 +11,7 @@ export default defineAppConfig({
     {
       text: 'Mastodon',
       icon: 'mastodon',
-      href: 'https://sonomu.club/@ohsilencerecords'
+      href: 'https://hachyderm.io/@miclgael'
     }
   ]
 })
