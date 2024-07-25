@@ -73,6 +73,7 @@ declare global {
   export interface ReleaseLink {
     url: string;
     text: string;
+    preferred?: boolean;
   }
   export interface ReleaseTrack {
     title: string;

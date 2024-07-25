@@ -138,9 +138,42 @@ export function useArtists() {
             Artwork by Michael Gale.`,
           links: [
             {
+              url: 'https://mirlo.space/whalebones/release/glamour-boy',
+              text: 'Mirlo',
+              preferred: true
+            },
+            {
               url: 'https://whalebones.bandcamp.com/album/glamour-boy',
               text: 'Bandcamp'
-            }
+            },
+            {
+              url: 'https://music.apple.com/au/album/glamour-boy/1745108319?app=music',
+              text: 'Apple Music'
+            },
+            {
+              url: 'https://music.apple.com/au/album/glamour-boy/1745108319?app=itunes',
+              text: 'iTunes'
+            },
+            {
+              url: 'https://www.deezer.com/album/583382382',
+              text: 'Deezer'
+            },
+            {
+              url: 'https://open.spotify.com/album/0ZdMlF2rusZyb7xKF9z0Lg',
+              text: 'Spotify'
+            },
+            {
+              url: 'https://youtube.com/playlist?list=OLAK5uy_n-rzd-DydSJFyj8JHfkzspv8YaJyf4DAs',
+              text: 'YouTube Music'
+            },
+            {
+              url: 'https://listen.tidal.com/album/361823944',
+              text: 'Tidal'
+            },
+            {
+              url: 'https://music.amazon.com/albums/B0D3J4M8BK',
+              text: 'Amazon'
+            },
           ],
           tracks: [
             { title: 'GUMMY BEAR', length: '04:23' },
