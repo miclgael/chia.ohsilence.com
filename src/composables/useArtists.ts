@@ -127,6 +127,7 @@ export function useArtists() {
       releases: [
         {
           title: 'GLAMOUR BOY',
+          description: 'The second album from Whalebones, featuring 9 original tracks and a remix.',
           type: 'LP',
           id: 'OH-016',
           date: new Date('June 14, 2024'),
@@ -315,6 +316,7 @@ export function useArtists() {
         {
           title: '1am',
           type: 'SINGLE',
+          description: 'The first release from Whalebones. Featuring the original track and a live recording.',
           artwork: 'release-whalebones-1.jpg',
           artworkCredit: 'M Gale',
           notes: `

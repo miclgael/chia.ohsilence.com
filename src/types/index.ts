@@ -86,6 +86,7 @@ declare global {
   export interface Release {
     id: OhSilenceReleaseId;
     title: string;
+    description?: string;
     type: ReleaseType;
     artwork: string | null;
     artworkCredit?: string;
