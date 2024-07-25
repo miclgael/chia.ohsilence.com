@@ -1,41 +1,61 @@
-# import vars from .env
+# Get variables from ../.env
 export $(egrep -v '^#' .env | xargs)
 
-# check if build flag was given (--build)
-if [ "$1" == "--build" ]; then
-  echo "Building the app"
-  pnpm run build
+if [ -z "$(git status --porcelain)" ]; then 
+  # Working directory clean
+  echo " 🤖 Bzzt: Working directory looks clean. Nice!"
+else 
+  # Uncommitted changes
+  echo " 🤖 Bzzt: ERROR There are uncommitted changes. Clean git history and try again."
+  exit 0
 fi
 
-echo "Compressing files"
-tar -czf .output.tar.gz .output
+echo
+# Clear out the existing files (except .output)
+read -p " 🤖 Bzzt: Remove existing files? (Live site will immediately die). (y/n)? " choice
+case "$choice" in 
+  y|Y ) echo "    yes";
+echo
+ssh -t $DEPLOY_SSH_HOST -p $DEPLOY_SSH_PORT "rm -rf $DEPLOY_WWW_DIR/{*,.*}"
+  ;;
 
-echo "Deploying to $DEPLOY_PATH"
+  n|N ) echo "    no";
 
-# create the deploy path if it doesn't exist
-echo "Creating the deploy path if it doesn't exist"
-mkdir -p $DEPLOY_PATH
+  ;;
+  * ) echo "    invalid";;
+esac
 
-# Remove existing tarball from the server
-echo "Removing existing tarball from the server"
-rm $DEPLOY_PATH/.output.tar.gz
+echo
+# Rsync to the mounted volume
+read -p " 🤖 Bzzt: Deploying to $DEPLOY_SSH_HOSTNAME. Continue? (y/n)? " choice
+case "$choice" in 
+  y|Y ) echo "    yes";
+echo
+rsync -ave "ssh -p $DEPLOY_SSH_PORT" --exclude='.deployignore' --exclude-from='.deployignore' --delete . $DEPLOY_SSH_HOST:$DEPLOY_WWW_DIR
+  ;;
 
-# copy the new tarball to the server
-echo "Copying the tarball to the server"
-cp .output.tar.gz $DEPLOY_PATH
+  n|N ) echo "    no";
 
-# Remove the existing `.output` folder from the server
-echo "Removing existing .output folder"
-rm -rf $DEPLOY_PATH/.output
+  ;;
+  * ) echo "    invalid";;
+esac
 
-echo "Unzipping on the server (will take a while)"
-tar -xzf $DEPLOY_PATH/.output.tar.gz -C $DEPLOY_PATH
-echo "Done"
+echo
+# Restart the running docker container
+read -p " 🤖 Bzzt: restarting $DEPLOY_SSH_CONTAINER container. Continue? (y/n)? " choice
+case "$choice" in 
+  y|Y ) echo "    yes";
+echo
+ssh -t $DEPLOY_SSH_HOST -p $DEPLOY_SSH_PORT "docker restart $DEPLOY_SSH_CONTAINER"
+  ;;
 
-echo "Cleaning up - server"
-rm $DEPLOY_PATH/.output.tar.gz
+  n|N ) echo "    no";
 
-echo "Cleaning up - codebase"
-rm -rf $CODE_PATH/.output.tar.gz
+  ;;
+  * ) echo "    invalid";;
+esac
 
-echo "Done! 🚀 "
+# End
+echo
+echo "🤖 Bzzt: Deployment complete! ✨"
+echo "         Please await container self-build process (ETA: 5 mins)"
