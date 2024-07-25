@@ -127,7 +127,7 @@ export function useArtists() {
       releases: [
         {
           title: 'GLAMOUR BOY',
-          description: 'The second album from Whalebones, featuring 9 original tracks and a remix.',
+          description: 'The second album from Whalebones, featuring 9 original tracks and a remix. This album will soon be released on floppy disk. Read more about the process on <a href="https://www.michaelgale.dev/blog/releasing-an-album-on-floppy-disk">Michael\'s blog</a>.',
           type: 'LP',
           id: 'OH-016',
           date: new Date('June 14, 2024'),

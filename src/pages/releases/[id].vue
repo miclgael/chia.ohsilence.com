@@ -57,6 +57,8 @@ useHead({
           </h4>
         </div>
 
+        <p v-if="release.description" v-html="release.description" />
+
         <p>{{ release.id }}</p>
 
         <c-section
