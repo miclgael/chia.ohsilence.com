@@ -17,6 +17,45 @@ export function useArtists() {
       },
       releases: [
         {
+          title: 'Wolves',
+          id: 'OH-017',
+          date: new Date('October 20, 2024'),
+          artwork: 'release-iamtheagent-wolves.jpg',
+          artworkCredit: 'Dylan McCrae',
+          type: 'SINGLE',
+          links: [
+            {
+              url: 'https://iamtheagent.bandcamp.com/track/wolves',
+              text: 'Bandcamp',
+              preferred: true
+            },
+            {
+              url: 'https://open.spotify.com/track/23rBNv33KHpJzik5fmuGeZ',
+              text: 'Spotify'
+            },
+            {
+              url: 'https://music.apple.com/au/album/wolves/1773638894',
+              text: 'Apple Music'
+            },
+            {
+              url: 'https://www.deezer.com/us/track/3044089591',
+              text: 'Deezer'
+            },
+            {
+              url: 'https://listen.tidal.com/album/392996929/track/392996930',
+              text: 'Tidal'
+            },
+            {
+              url: 'https://www.youtube.com/watch?v=2PlYhnuGDIk',
+              text: 'YouTube'
+            },
+            {
+              url: 'https://music.youtube.com/playlist?list=OLAK5uy_lQlWq9FyoNETXQ9DJEzMK4qqc_aTL5Gqo',
+              text: 'YouTube Music'
+            }
+          ]
+        },
+        {
           title: 'Four',
           id: 'OH-005',
           type: 'EP',
@@ -139,13 +178,17 @@ export function useArtists() {
             Artwork by Michael Gale.`,
           links: [
             {
-              url: 'https://mirlo.space/whalebones/release/glamour-boy',
-              text: 'Mirlo',
+              url: 'https://whalebones.bandcamp.com/merch/limited-floppy-disk-edition',
+              text: 'Limited Floppy Disk Edition (Bandcamp)',
               preferred: true
             },
             {
               url: 'https://whalebones.bandcamp.com/album/glamour-boy',
               text: 'Bandcamp'
+            },
+            {
+              url: 'https://mirlo.space/whalebones/release/glamour-boy',
+              text: 'Mirlo'             
             },
             {
               url: 'https://music.apple.com/au/album/glamour-boy/1745108319?app=music',
@@ -174,7 +217,7 @@ export function useArtists() {
             {
               url: 'https://music.amazon.com/albums/B0D3J4M8BK',
               text: 'Amazon'
-            },
+            }
           ],
           tracks: [
             { title: 'GUMMY BEAR', length: '04:23' },
