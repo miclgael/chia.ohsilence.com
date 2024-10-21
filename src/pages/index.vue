@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { getReleaseById } = useReleases()
-const featured = getReleaseById('OH-016')
+const featured = getReleaseById('OH-017')
 
 useHead({
   meta: [
